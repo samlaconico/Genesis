@@ -13,7 +13,7 @@ export default function ServiceCard({
 }: ServiceCardParams) {
   return (
     <>
-      <div className="bg-neutral-300 p-6 md:p-4 lg:p-6 md:w-[30vw] m-auto shadow-lg hover:scale-[1.01] transition-transform">
+      <div className="bg-neutral-300 p-6 md:p-4 lg:p-6 md:w-[25vw] m-auto shadow-lg hover:scale-[1.01] transition-transform">
         <div className="container w-full overflow-hidden content-center m-auto">
           <img src={img} className="m-auto rounded-md"/>
         </div>
