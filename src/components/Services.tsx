@@ -11,7 +11,7 @@ export default function Services() {
           <ServiceCard
             title={item.title}
             description={item.description}
-            img={item.img}
+            img={item.headerimg}
             key={idx}
           ></ServiceCard>
         ))}
