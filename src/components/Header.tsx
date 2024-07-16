@@ -5,7 +5,7 @@ import Logo from "../../public/images/logo.png";
 export default function Header() {
   return (
     <div>
-      <h1 className="bg-black w-full text-white text-center p-1">
+      <h1 className="bg-genesis-orange w-full text-white text-center p-1">
         WE ARE NOW LOCATED AT 24922 Anza Dr Valencia, CA 91355
       </h1>
 
