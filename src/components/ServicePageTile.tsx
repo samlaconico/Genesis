@@ -1,25 +1,32 @@
 type ServicePageTileParams = {
   title: string;
   descripion: string;
-  img: string;
+  headerimg: string;
+  bodyimg: string
 };
 
 export default function ServicePageTile({
   title,
   descripion,
-  img,
+  headerimg,
+  bodyimg
 }: ServicePageTileParams) {
   return (
     <>
-      <div className="w-full py-4">
+      <div className="w-full">
         <div className="pb-10">
-          <img src={img} className="w-screen h-[35vw] object-cover"></img>
+          <img src={headerimg} className="w-screen h-[70vh] md:h-[35vw] object-cover"/>
         </div>
 
-        <div className="px-5 space-y-5">
-          <h1 className="text-3xl font-semibold">{title}</h1>
+        <div className="px-16 space-y-5 py-10">
+          <h1 className="text-4xl  font-semibold">{title}</h1>
 
-          <p className="text-xl font-medium w-[50vw]">{descripion}</p>
+          <p className="text-2xl font-sans font-medium">{descripion}</p>
+
+          <div className="flex flex-col md:flex-row space-y-14 md:space-y-0 md:text-start  md:items-start md:space-x-14 py-20">
+            <img className="md:w-1/2 rounded-xl shadow-lg shadow-neutral-500" src={bodyimg} />
+            <p className="text-2xl font-medium font-sans md:w-[50vw]">{descripion}</p>
+          </div>
         </div>
       </div>
     </>

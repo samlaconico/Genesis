@@ -7,7 +7,7 @@ export default function ServicesPage() {
     <>
     <div>
       {ServiceData.map((item, idx) => (
-        <ServicePageTile title={item.title} descripion={item.description} img={item.img} key={idx}/>
+        <ServicePageTile title={item.title} descripion={item.description} headerimg={item.headerimg} bodyimg={item.bodyimg} key={idx}/>
       ))}
       </div>
     </>
