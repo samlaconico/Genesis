@@ -13,13 +13,13 @@ export default function ServicePageTile({
 }: ServicePageTileParams) {
   return (
     <>
-      <div className="w-full">
+      <div id={title} className="w-full">
         <div className="pb-10">
           <img src={headerimg} className="w-screen h-[70vh] md:h-[35vw] object-cover"/>
         </div>
 
-        <div className="px-16 space-y-5 py-10">
-          <h1 className="text-4xl  font-semibold">{title}</h1>
+        <div className="px-16 mx-48 space-y-5 py-10">
+          <h1 className="text-4xl font-semibold uppercase">{title}</h1>
 
           <p className="text-2xl font-sans font-medium">{descripion}</p>
 
