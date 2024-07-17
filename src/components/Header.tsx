@@ -5,7 +5,7 @@ import Link from "next/link";
 import Logo from "../../public/images/logo.png";
 import { useEffect, useState } from "react";
 
-const ListItemStyle : string = "p-6 border-t-2"
+const ListItemStyle: string = "p-6 border-t-2";
 
 export default function Header() {
   const [nav, setNav] = useState(false);
@@ -45,29 +45,27 @@ export default function Header() {
               : "fixed top-0 right-[-100%] w-[300px] h-screen bg-white z-50 duration-300"
           }
         >
-
-          <h1  onClick={() => {setNav(!nav)}} className="text-end">icon</h1>
+          <h1
+            onClick={() => {
+              setNav(!nav);
+            }}
+            className="text-end"
+          >
+            icon
+          </h1>
           <ul>
-            <li className={ListItemStyle}>
-              <Link onClick={() => setNav(!nav)} href="/">
-                HOME
-              </Link>
-            </li>
-            <li className={ListItemStyle}>
-              <Link onClick={() => setNav(!nav)} href="/services">
-                SERVICES
-              </Link>
-            </li>
-            <li className={ListItemStyle}>
-              <Link onClick={() => setNav(!nav)} href="/contact">
-                CONTACT
-              </Link>
-            </li>
-            <li className={`${ListItemStyle} border-b-2` }>
-              <Link onClick={() => setNav(!nav)} href="/about">
-                ABOUT US
-              </Link>
-            </li>
+            <Link onClick={() => setNav(!nav)} href="/">
+              <li className={ListItemStyle}>HOME</li>
+            </Link>
+            <Link onClick={() => setNav(!nav)} href="/services">
+              <li className={ListItemStyle}>SERVICES</li>
+            </Link>
+            <Link onClick={() => setNav(!nav)} href="/contact">
+              <li className={ListItemStyle}>CONTACT</li>
+            </Link>
+            <Link onClick={() => setNav(!nav)} href="/about">
+              <li className={`${ListItemStyle} border-b-2`}>ABOUT US</li>
+            </Link>
           </ul>
         </div>
       </div>
