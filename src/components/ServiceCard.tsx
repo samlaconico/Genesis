@@ -20,7 +20,7 @@ export default function ServiceCard({
             <img src={img} className="m-auto rounded-lg" />
           </div>
 
-          <h1 className="text-3xl font-sans text-center pt-5 font-bold uppercase">
+          <h1 className="text-3xl text-balance font-sans text-center pt-5 font-bold uppercase">
             {title}
           </h1>
         </Link>
