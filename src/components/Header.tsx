@@ -20,7 +20,7 @@ export default function Header() {
         WE ARE NOW LOCATED AT 24922 Anza Dr Valencia, CA 91355
       </h1>
 
-      <div className="py-3 fixed bg-white md:static top-8 flex-row flex w-full justify-center z-50 border-b-2 md:border-b-0">
+      <div className="py-3 fixed bg-white md:static top-8 flex-row flex w-full justify-between px-10 md:justify-center z-50 border-b-2 md:border-b-0">
         <Link href="/">
           <img src="images/logo.png" className="h-24" />
         </Link>
@@ -41,8 +41,8 @@ export default function Header() {
         <div
           className={
             nav
-              ? "fixed top-0 right-0 w-[300px] h-screen bg-white z-50 duration-300"
-              : "fixed top-0 right-[-100%] w-[300px] h-screen bg-white z-50 duration-300"
+              ? "fixed md:hidden top-0 right-0 w-[300px] h-screen bg-white z-50 duration-300"
+              : "fixed md:hidden top-0 right-[-100%] w-[300px] h-screen bg-white z-50 duration-300"
           }
         >
           <h1

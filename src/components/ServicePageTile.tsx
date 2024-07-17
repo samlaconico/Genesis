@@ -35,7 +35,7 @@ export default function ServicePageTile({
               className="md:w-1/2 rounded-xl shadow-lg shadow-neutral-500"
               src={bodyimg}
             />
-            <ul className="list-disc ">
+            <ul className="list-disc px-4">
               {points.map((value, key) => (
                 <li key={key} className="text-sans font-medium text-2xl">{value}</li>
               ))}
