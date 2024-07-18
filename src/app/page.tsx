@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
+    <div className="pt-36 md:pt-0">
       <Slider />
       <Mission />
       <Services/>

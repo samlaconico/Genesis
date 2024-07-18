@@ -5,7 +5,7 @@ import ServicePageTile from "@/components/ServicePageTile";
 export default function ServicesPage() {
   return (
     <>
-    <div>
+    <div className="pt-36 md:pt-0">
       {ServiceData.map((item, idx) => (
         <ServicePageTile title={item.title} descripion={item.description} headerimg={item.headerimg} bodyimg={item.bodyimg} points={item.points} key={idx}/>
       ))}
