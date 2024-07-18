@@ -5,7 +5,7 @@ import Link from "next/link";
 import Logo from "../../public/images/logo.png";
 import { useEffect, useState } from "react";
 
-const ListItemStyle: string = "p-6 border-t-2";
+const ListItemStyle: string = "p-6 border-t-2 hover:bg-neutral-300";
 
 export default function Header() {
   const [nav, setNav] = useState(false);
@@ -28,7 +28,7 @@ export default function Header() {
           <Link href="/">HOME</Link>
           <Link href="/services">SERVICES</Link>
           <Link href="/contact">CONTACT</Link>
-          <Link href="/about">ABOUT US</Link>
+          <Link href="/about-us">ABOUT US</Link>
         </div>
 
         <div
@@ -63,7 +63,7 @@ export default function Header() {
             <Link onClick={() => setNav(!nav)} href="/contact">
               <li className={ListItemStyle}>CONTACT</li>
             </Link>
-            <Link onClick={() => setNav(!nav)} href="/about">
+            <Link onClick={() => setNav(!nav)} href="/about-us">
               <li className={`${ListItemStyle} border-b-2`}>ABOUT US</li>
             </Link>
           </ul>

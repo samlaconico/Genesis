@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
-const poppins = Poppins({weight: "300", subsets: ["latin"]})
+const poppins = Poppins({weight: "400", subsets: ["latin"], style: ["normal"]})
 
 export const metadata: Metadata = {
   title: "Genesis 1 Auto Concepts",
