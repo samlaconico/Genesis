@@ -13,13 +13,7 @@ export default function ContactForm() {
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
-    console.log(name);
-    console.log(year);
-    console.log(make);
-    console.log(model);
-    console.log(email);
-    console.log(phone);
-    console.log(descripion);
+    
   };
 
   return (
