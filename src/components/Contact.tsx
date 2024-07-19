@@ -8,14 +8,14 @@ export default function ContactComponent() {
           CONTACT
         </h1>
 
-        <div className="w-screen md:grid md:grid-cols-2 space-x-8 pt-4">
-          <div className="md:w-[50vw] bg-slate-400 object-cover overflow-hidden">
-            <img
-              src="/images/car2.png"
-              className="m-auto w-full h-full object-cover"
-            />
-          </div>
+        <div className="w-screen h-[50vh] pb-10 object-cover overflow-hidden">
+          <img
+            src="/images/car2.png"
+            className="m-auto w-full h-full object-cover"
+          />
+        </div>
 
+        <div className="m-auto w-[90vw] lg:w-[55%] pb-10">
           <ContactForm />
         </div>
       </div>
