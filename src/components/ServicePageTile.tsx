@@ -25,9 +25,9 @@ export default function ServicePageTile({
 
         <div className="m-auto mx-[5vw] space-y-5">
           <div className="block md:flex-row md:flex md:space-x-24" >
-          <h1 className="text-4xl font-semibold uppercase">{title}</h1>
+          <h1 className="text-4xl font-semibold uppercase font-poppins">{title}</h1>
 
-          <p className="text-2xl font-sans font-medium">{descripion}</p>
+          <p className="text-2xl font-medium font-jost">{descripion}</p>
           </div>
 
           <div className="flex flex-col md:flex-row space-y-14 md:space-y-0 md:text-start md:items-start md:space-x-14 py-8 pb-14">
@@ -37,7 +37,7 @@ export default function ServicePageTile({
             />
             <ul className="list-disc px-4">
               {points.map((value, key) => (
-                <li key={key} className="text-sans font-medium text-2xl">{value}</li>
+                <li key={key} className="font-medium font-jost text-2xl">{value}</li>
               ))}
             </ul>
           </div>

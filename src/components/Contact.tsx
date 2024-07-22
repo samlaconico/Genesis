@@ -4,7 +4,7 @@ export default function ContactComponent() {
   return (
     <>
       <div className="">
-        <h1 className="pt-48 md:pt-0 text-5xl text-center font-sans py-4">
+        <h1 className="pt-48 md:pt-0 text-5xl text-center font-poppins py-4">
           CONTACT
         </h1>
 

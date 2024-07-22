@@ -5,7 +5,7 @@ export default function Team() {
   return (
     <>
       <div className="pb-10">
-        <h1 className="py-12 md:pt-0 text-5xl text-center font-sans">
+        <h1 className="py-12 md:pt-0 text-5xl text-center font-poppins">
           MEETING THE TEAM
         </h1>
         <div className="flex px-3 md:px-0 md:flex-row flex-wrap justify-between text-center ">

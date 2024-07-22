@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <div>
-      <h1 className="bg-genesis-orange fixed md:static w-full text-white text-center z-30 p-1">
+      <h1 className="bg-genesis-orange fixed md:static w-full text-white text-center z-30 p-1 font-jost">
         WE ARE NOW LOCATED AT 24922 Anza Dr Valencia, CA 91355
       </h1>
 
@@ -24,7 +24,7 @@ export default function Header() {
         <Link href="/">
           <img src="images/logo.png" className="h-24" />
         </Link>
-        <div className="hidden md:flex flex-row space-x-12 self-center font-medium font-sans text-2xl">
+        <div className="hidden md:flex flex-row space-x-12 self-center font-bold font-poppins text-2xl">
           <Link href="/">HOME</Link>
           <Link href="/services">SERVICES</Link>
           <Link href="/contact">CONTACT</Link>

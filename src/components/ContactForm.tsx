@@ -18,7 +18,7 @@ export default function ContactForm() {
 
   return (
     <>
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} className="font-poppins">
         <div className="flex-col flex px-10">
           <div className="pb-4">
             <h1>Contact Info</h1>

@@ -17,6 +17,11 @@ const config: Config = {
       colors: {
         "genesis-orange": "#DA7600",
       },
+
+      fontFamily: {
+        "poppins": "var(--font-poppins)",
+        "jost": "var(--font-jost)",
+      }
     },
   },
   plugins: [],
