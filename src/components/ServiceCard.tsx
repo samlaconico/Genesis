@@ -23,6 +23,7 @@ export default function ServiceCard({
           <h1 className="text-2xl lg:text-4xl text-black uppercase font-semibold m-auto text-center font-poppins ">
             {title}
           </h1>
+          
         </div>
 
         

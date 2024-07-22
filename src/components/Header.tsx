@@ -3,12 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/images/logo.png";
+import { ServiceData } from "../../data";
 import { useEffect, useState } from "react";
 
 const ListItemStyle: string = "p-6 border-t-2 hover:bg-neutral-300";
 
 export default function Header() {
   const [nav, setNav] = useState(false);
+  const [services, setServices] = useState(false);
 
   useEffect(() => {
     console.log(nav);
@@ -41,7 +43,7 @@ export default function Header() {
         <div
           className={
             nav
-              ? "fixed md:hidden top-0 right-0 w-[300px] h-screen bg-white z-50 duration-300"
+              ? "fixed md:hidden top-0 right-0 w-[300px] h-screen bg-white z-50 duration-300 font-poppins"
               : "fixed md:hidden top-0 right-[-100%] w-[300px] h-screen bg-white z-50 duration-300"
           }
         >
@@ -57,11 +59,36 @@ export default function Header() {
             <Link onClick={() => setNav(!nav)} href="/">
               <li className={ListItemStyle}>HOME</li>
             </Link>
-            <Link onClick={() => setNav(!nav)} href="/services">
-              <li className={ListItemStyle}>SERVICES</li>
-            </Link>
-            
-            
+
+            <div>
+              <li
+                onClick={() => {
+                  setServices(!services);
+                }}
+                className={ListItemStyle}
+              >
+                SERVICES
+              </li>
+              <div
+                className={
+                  services ? "transition-all duration-300 " : "hidden "
+                }
+              >
+                {ServiceData.map((item, key) => (
+                  <Link href={`services#${item.title}`} onClick={() => {setNav(!nav); setServices(!services)}}>
+                    <li className="p-3 px-12 border-t-2 hover:bg-neutral-300 capitalize">
+                      {item.title}
+                    </li>
+                  </Link>
+                ))}
+                <Link href="services" onClick={() => {setNav(!nav); setServices(!services)}}>
+                    <li className="p-3 px-12 border-t-2 hover:bg-neutral-300 capitalize">
+                      View All
+                    </li>
+                  </Link>
+              </div>
+            </div>
+
             <Link onClick={() => setNav(!nav)} href="/contact">
               <li className={ListItemStyle}>CONTACT</li>
             </Link>
