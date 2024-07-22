@@ -8,7 +8,7 @@ export default function AboutUsComponent() {
           ABOUT US
         </h1>
 
-        <div className="w-screen md:grid md:grid-cols-2 space-x-8 pt-4">
+        <div className="w-full md:grid md:grid-cols-2 space-x-8 pt-4">
           <div className="md:w-[50vw] bg-slate-400 object-cover overflow-hidden">
             <img
               src={AboutUsData.img}

@@ -17,7 +17,7 @@ export default function Footer() {
           <h1 className="text-center"> asoidsh</h1>
         </div>
 
-        <div className="flex flex-col text-2xl font-jost space-y-3 text-nowrap justify-center">
+        <div className="flex flex-col text-2xl font-jost space-y-3 md:text-nowrap justify-center">
           <h1>24922 Anza Dr Santa Clarita, CA 91355</h1>
           <h1>(661) 678-0990</h1>
         </div>

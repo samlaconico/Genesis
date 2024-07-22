@@ -8,7 +8,7 @@ export default function ContactComponent() {
           CONTACT
         </h1>
 
-        <div className="w-screen h-[50vh] pb-10 object-cover overflow-hidden">
+        <div className="w-full h-[50vh] pb-10 object-cover overflow-hidden">
           <img
             src="/images/car2.png"
             className="m-auto w-full h-full object-cover"
