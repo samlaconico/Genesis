@@ -75,7 +75,7 @@ export default function Header() {
                 }
               >
                 {ServiceData.map((item, key) => (
-                  <Link href={`services#${item.title}`} onClick={() => {setNav(!nav); setServices(!services)}}>
+                  <Link key={key} href={`services#${item.title}`} onClick={() => {setNav(!nav); setServices(!services)}}>
                     <li className="p-3 px-12 border-t-2 hover:bg-neutral-300 capitalize">
                       {item.title}
                     </li>
