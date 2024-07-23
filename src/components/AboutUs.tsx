@@ -9,7 +9,7 @@ export default function AboutUsComponent() {
         </h1>
 
         <div className="w-full md:grid md:grid-cols-2 space-x-8 ">
-          <div className="md:w-[50vw] bg-slate-400 object-cover overflow-hidden">
+          <div className="md:w-[50vw] object-cover overflow-hidden">
             <img
               src={AboutUsData.img}
               className="m-auto w-full h-full object-cover"

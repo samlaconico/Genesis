@@ -15,7 +15,7 @@ const config: Config = {
       },
 
       colors: {
-        "genesis-orange": "#DA7600",
+        "genesis-orange": "#FA6600",
       },
 
       fontFamily: {

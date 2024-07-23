@@ -7,7 +7,7 @@ export default function ServicesPage() {
     <>
     <div className="pt-36 md:pt-0">
     <h1 className="pt-48 md:pt-0 text-5xl text-center font-poppins py-4">
-          ABOUT US
+          SERVICES
         </h1>
       {ServiceData.map((item, idx) => (
         <ServicePageTile title={item.title} descripion={item.description} headerimg={item.headerimg} bodyimg={item.bodyimg} points={item.points} key={idx}/>
