@@ -5,6 +5,8 @@ import Link from "next/link";
 import Logo from "../../public/images/logo.png";
 import { ServiceData } from "../../data";
 import { useEffect, useState } from "react";
+import { HiMiniBars4 } from "react-icons/hi2";
+import { HiMiniChevronDoubleRight } from "react-icons/hi2";
 
 const ListItemStyle: string = "p-6 border-t-2 hover:bg-neutral-300";
 
@@ -22,9 +24,9 @@ export default function Header() {
         WE ARE NOW LOCATED AT 24922 Anza Dr Valencia, CA 91355
       </h1>
 
-      <div className="py-3 fixed bg-white md:static top-8 flex-row flex w-full justify-between px-10 md:justify-center z-50 border-b-2 md:border-b-0">
+      <div className="py-3 fixed bg-white md:static top-8 flex-row flex w-full justify-between pr-8 md:px-10 md:justify-center z-50 border-b-2 md:border-b-0">
         <Link href="/">
-          <img src="images/logo.png" className="h-24" />
+          <img src="images/logo.png" className="h-24 px-10" />
         </Link>
         <div className="hidden md:flex flex-row space-x-12 self-center font-bold font-poppins text-2xl">
           <Link href="/">HOME</Link>
@@ -35,9 +37,9 @@ export default function Header() {
 
         <div
           onClick={() => setNav(!nav)}
-          className="self-center bg-red-400 hover:cursor-pointer md:hidden"
+          className="self-center hover:cursor-pointer  md:hidden"
         >
-          icon
+          <HiMiniBars4 className="size-10" />
         </div>
 
         <div
@@ -47,16 +49,21 @@ export default function Header() {
               : "fixed md:hidden top-0 right-[-100%] w-[300px] h-screen bg-white z-50 duration-300"
           }
         >
-          <h1
+          <HiMiniChevronDoubleRight
             onClick={() => {
               setNav(!nav);
             }}
-            className="text-end"
-          >
-            icon
-          </h1>
+            className=" size-12"
+          />
+
           <ul>
-            <Link onClick={() => setNav(!nav)} href="/">
+            <Link
+              onClick={() => {
+                setNav(!nav);
+                setServices(false);
+              }}
+              href="/"
+            >
               <li className={ListItemStyle}>HOME</li>
             </Link>
 
@@ -75,24 +82,49 @@ export default function Header() {
                 }
               >
                 {ServiceData.map((item, key) => (
-                  <Link key={key} href={`services#${item.title}`} onClick={() => {setNav(!nav); setServices(!services)}}>
+                  <Link
+                    key={key}
+                    href={`services#${item.title}`}
+                    onClick={() => {
+                      setNav(!nav);
+                      setServices(!services);
+                    }}
+                  >
                     <li className="p-3 px-12 border-t-2 hover:bg-neutral-300 capitalize">
                       {item.title}
                     </li>
                   </Link>
                 ))}
-                <Link href="services" onClick={() => {setNav(!nav); setServices(!services)}}>
-                    <li className="p-3 px-12 border-t-2 hover:bg-neutral-300 capitalize">
-                      View All
-                    </li>
-                  </Link>
+                <Link
+                  href="services"
+                  onClick={() => {
+                    setNav(!nav);
+                    setServices(!services);
+                  }}
+                >
+                  <li className="p-3 px-12 border-t-2 hover:bg-neutral-300 capitalize">
+                    View All
+                  </li>
+                </Link>
               </div>
             </div>
 
-            <Link onClick={() => setNav(!nav)} href="/contact">
+            <Link
+              onClick={() => {
+                setNav(!nav);
+                setServices(false);
+              }}
+              href="/contact"
+            >
               <li className={ListItemStyle}>CONTACT</li>
             </Link>
-            <Link onClick={() => setNav(!nav)} href="/about-us">
+            <Link
+              onClick={() => {
+                setNav(!nav);
+                setServices(false);
+              }}
+              href="/about-us"
+            >
               <li className={`${ListItemStyle} border-b-2`}>ABOUT US</li>
             </Link>
           </ul>
