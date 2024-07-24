@@ -1,4 +1,5 @@
 
+import InstagramFeed from "@/components/InstagramFeed";
 import Mission from "@/components/Mission";
 import Services from "@/components/Services";
 import Slider from "@/components/Slider";
@@ -10,6 +11,7 @@ export default function Home() {
       <Slider />
       <Mission />
       <Services/>
+      <InstagramFeed/>
     </div>
   );
 }

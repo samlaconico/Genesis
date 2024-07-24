@@ -21,7 +21,7 @@ const config: Config = {
       fontFamily: {
         "poppins": "var(--font-poppins)",
         "jost": "var(--font-jost)",
-      }
+      },
     },
   },
   plugins: [],

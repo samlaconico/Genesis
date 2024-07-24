@@ -8,16 +8,14 @@ export default function AboutUsComponent() {
           ABOUT US
         </h1>
 
-        <div className="w-full md:grid md:grid-cols-2 space-x-8 ">
-          <div className="md:w-[50vw] object-cover overflow-hidden">
-            <img
-              src={AboutUsData.img}
-              className="m-auto w-full h-full object-cover"
-            />
-          </div>
-          <div className="py-10 md:py-0 pr-10 text-2xl font-jost m-auto">
-            <p>{AboutUsData.description}</p>
-          </div>
+        <div className="w-full h-[50vh] pb-10 object-cover overflow-hidden">
+          <img
+            src={AboutUsData.img}
+            className="m-auto w-full h-full object-cover"
+          />
+        </div>
+        <div className="py-10 md:py-0 md:pt-8 container text-center pr-10 text-2xl font-jost m-auto">
+          <p>{AboutUsData.description}</p>
         </div>
       </div>
     </>

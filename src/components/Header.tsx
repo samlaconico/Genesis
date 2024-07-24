@@ -24,11 +24,12 @@ export default function Header() {
         WE ARE NOW LOCATED AT 24922 Anza Dr Valencia, CA 91355
       </h1>
 
-      <div className="py-3 fixed bg-white md:static top-8 flex-row flex w-full justify-between pr-8 md:px-10 md:justify-center z-50 border-b-2 md:border-b-0">
+      <div className="py-3 fixed bg-white md:static top-8 flex-row flex w-full justify-between pr-8 lg:px-4 z-50 border-b-2 md:border-b-0">
         <Link href="/">
-          <img src="images/logo.png" className="h-24 px-10" />
+          <img src="images/G1_Text.png" className="h-24 w-full scale-75 lg:hidden block" />
+          <img src="images/logo_text.png" className="h-24 hidden lg:block" />
         </Link>
-        <div className="hidden md:flex flex-row space-x-12 self-center font-bold font-poppins text-2xl">
+        <div className="hidden md:flex flex-row space-x-12 self-center font-bold font-poppins text-2xl pr-4 text-nowrap">
           <Link href="/">HOME</Link>
           <Link href="/services">SERVICES</Link>
           <Link href="/contact">CONTACT</Link>
