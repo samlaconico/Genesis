@@ -6,7 +6,7 @@ export default function InstagramFeed() {
     <>
       <div className="w-full bg-white grid grid-cols-4">
         {InstagramData.map((index, key) => (
-          <div className="w-full h-full aspect-square object-cover overflow-hidden">
+          <div className="w-full h-full aspect-square object-cover overflow-hidden" key={key}>
           
           <Link href={index.link} rel="noopener noreferrer" target="_blank">
           <img
