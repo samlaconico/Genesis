@@ -7,12 +7,14 @@ import { ServiceData } from "../../data";
 import { useEffect, useState } from "react";
 import { HiMiniBars4 } from "react-icons/hi2";
 import { HiMiniChevronDoubleRight } from "react-icons/hi2";
+import { usePathname } from "next/navigation";
 
 const ListItemStyle: string = "p-6 border-t-2 hover:bg-neutral-300";
 
 export default function Header() {
   const [nav, setNav] = useState(false);
   const [services, setServices] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     console.log(nav);
@@ -21,19 +23,58 @@ export default function Header() {
   return (
     <div>
       <h1 className="bg-genesis-orange fixed md:static w-full text-white text-center z-30 p-1 font-jost">
-        WE ARE NOW LOCATED AT 24922 Anza Dr Valencia, CA 91355
+        WE ARE NOW LOCATED AT 24922 Anza Dr Valencia, CA 91355 {pathname}
       </h1>
 
       <div className="py-3 fixed bg-white md:static top-8 flex-row flex w-full justify-between pr-8 lg:px-4 z-50 border-b-2 md:border-b-0">
         <Link href="/">
-          <img src="images/G1_Text.png" className="h-24 w-full scale-75 lg:hidden block" />
+          <img
+            src="images/G1_Text.png"
+            className="h-24 w-full scale-75 lg:hidden block"
+          />
           <img src="images/logo_text.png" className="h-24 hidden lg:block" />
         </Link>
         <div className="hidden md:flex flex-row space-x-12 self-center font-normal font-poppins text-2xl pr-4 text-nowrap">
-          <Link href="/" className="hover:underline underline-offset-4 decoration-genesis-orange">HOME</Link>
-          <Link href="/services" className="hover:underline underline-offset-4 decoration-genesis-orange">SERVICES</Link>
-          <Link href="/contact" className="hover:underline underline-offset-4 decoration-genesis-orange">CONTACT</Link>
-          <Link href="/about-us" className="hover:underline underline-offset-4 decoration-genesis-orange">ABOUT US</Link>
+          <Link
+            href="/"
+            className={
+              pathname == "/"
+                ? "underline underline-offset-4 decoration-genesis-orange"
+                : "hover:underline underline-offset-4 decoration-genesis-orange"
+            }
+          >
+            HOME
+          </Link>
+          <Link
+            href="/services"
+            className={
+              pathname == "/services"
+                ? "underline underline-offset-4 decoration-genesis-orange"
+                : "hover:underline underline-offset-4 decoration-genesis-orange"
+            }
+          >
+            SERVICES
+          </Link>
+          <Link
+            href="/contact"
+            className={
+              pathname == "/contact"
+                ? "underline underline-offset-4 decoration-genesis-orange"
+                : "hover:underline underline-offset-4 decoration-genesis-orange"
+            }
+          >
+            CONTACT
+          </Link>
+          <Link
+            href="/about-us"
+            className={
+              pathname == "/about-us"
+                ? "underline underline-offset-4 decoration-genesis-orange"
+                : "hover:underline underline-offset-4 decoration-genesis-orange"
+            }
+          >
+            ABOUT US
+          </Link>
         </div>
 
         <div
