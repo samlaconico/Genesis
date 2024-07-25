@@ -7,7 +7,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+const poppinsBold = Poppins({weight: "600", subsets: ["latin"], style: ["normal"], variable:'--font-poppinsBold'})
 const poppins = Poppins({weight: "400", subsets: ["latin"], style: ["normal"], variable:'--font-poppins'})
+
 const jost = Jost({weight: "400", subsets: ["latin"], variable:'--font-jost'})
 
 
@@ -23,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${jost.variable} m-auto`}>
+      <body className={`${poppins.variable} ${poppinsBold.variable} ${jost.variable} m-auto`}>
         <Header />
         {children}
         <Footer/>

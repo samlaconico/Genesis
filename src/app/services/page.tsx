@@ -8,7 +8,7 @@ export default function ServicesPage() {
   return (
     <>
     <div className="md:pt-0">
-    <h1 className="pt-48 md:pt-0 text-5xl text-center font-poppins py-4">
+    <h1 className="pt-48 md:pt-0 text-5xl text-center font-bold font-poppinsBold py-4">
           SERVICES
         </h1>
       {ServiceDataNew.map((item, idx) => (

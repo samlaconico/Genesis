@@ -4,7 +4,7 @@ export default function AboutUsComponent() {
   return (
     <>
       <div className="md:pb-20">
-        <h1 className="pt-48 md:pt-0 text-5xl text-center font-poppins py-4">
+        <h1 className="pt-48 md:pt-0 text-5xl text-center font-poppinsBold py-4">
           ABOUT US
         </h1>
 

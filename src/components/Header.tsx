@@ -29,11 +29,11 @@ export default function Header() {
           <img src="images/G1_Text.png" className="h-24 w-full scale-75 lg:hidden block" />
           <img src="images/logo_text.png" className="h-24 hidden lg:block" />
         </Link>
-        <div className="hidden md:flex flex-row space-x-12 self-center font-bold font-poppins text-2xl pr-4 text-nowrap">
-          <Link href="/">HOME</Link>
-          <Link href="/services">SERVICES</Link>
-          <Link href="/contact">CONTACT</Link>
-          <Link href="/about-us">ABOUT US</Link>
+        <div className="hidden md:flex flex-row space-x-12 self-center font-normal font-poppins text-2xl pr-4 text-nowrap">
+          <Link href="/" className="hover:underline underline-offset-4 decoration-genesis-orange">HOME</Link>
+          <Link href="/services" className="hover:underline underline-offset-4 decoration-genesis-orange">SERVICES</Link>
+          <Link href="/contact" className="hover:underline underline-offset-4 decoration-genesis-orange">CONTACT</Link>
+          <Link href="/about-us" className="hover:underline underline-offset-4 decoration-genesis-orange">ABOUT US</Link>
         </div>
 
         <div

@@ -20,8 +20,13 @@ const config: Config = {
 
       fontFamily: {
         "poppins": "var(--font-poppins)",
+        "poppinsBold" : "var(--font-poppinsBold)",
         "jost": "var(--font-jost)",
       },
+      
+      fontWeight: {
+        "superbold": "font-weight: 2000"
+      }
     },
   },
   plugins: [],

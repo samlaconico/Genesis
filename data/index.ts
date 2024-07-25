@@ -144,10 +144,46 @@ export const ServiceDataNew = [
 ];
 
 export const AboutUsData = {
-  description: "Since opening our doors in Valencia in 2015, we have been immensely grateful to our loyal customers for their continued support. Our owner, Jay, brings over 30 years of industry experience, having worked in and owned various shops before founding Genesis 1 Auto Concepts. We take pride in being the premier one-stop-shop for all automotive needs. We can do everything you see on our demo cars for your own. Whatever you may desire for your car, truck, van, or RV, you can trust that you’re in expert hands.",
-  
+  description:
+    "Since opening our doors in Valencia in 2015, we have been immensely grateful to our loyal customers for their continued support. Our owner, Jay, brings over 30 years of industry experience, having worked in and owned various shops before founding Genesis 1 Auto Concepts. We take pride in being the premier one-stop-shop for all automotive needs. We can do everything you see on our demo cars for your own. Whatever you may desire for your car, truck, van, or RV, you can trust that you’re in expert hands.",
+
   img: "/images/car1.png",
 };
+
+export const InstagramData = [
+  {
+    image: "images/instagram/instagram1.jpg",
+    link: "https://www.instagram.com/p/C9m5DMwpbos/?igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: "images/instagram/instagram2.jpg",
+    link: "https://www.instagram.com/p/C9dAXMByg1N/?igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: "images/instagram/instagram3.jpg",
+    link: "https://www.instagram.com/p/C9JfG5CxllM/?igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: "images/instagram/instagram4.jpg",
+    link: "https://www.instagram.com/p/C7CiLoOPVSx/?igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: "images/instagram/instagram5.jpg",
+    link: "https://www.instagram.com/p/C21fYHZL7R2/?igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: "images/instagram/instagram6.jpg",
+    link: "https://www.instagram.com/p/C8nM2RHyHrO/?igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: "images/instagram/instagram7.jpg",
+    link: "https://www.instagram.com/p/C5hElKuv14Y/?igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: "images/instagram/instagram8.jpg",
+    link: "https://www.instagram.com/p/C33VddiSmB1/?igsh=MzRlODBiNWFlZA==",
+  },
+];
 
 export const TeamData = [
   {
