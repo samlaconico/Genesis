@@ -8,7 +8,7 @@ export function sendEmail(email: string, name: string, message: string) {
   })
     .then((res) => res.json())
     .then((response) => {
-      alert(response);
+      alert(response.message);
     })
     .catch((err) => {
       alert(err);

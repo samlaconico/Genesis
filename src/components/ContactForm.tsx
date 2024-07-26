@@ -14,10 +14,17 @@ export default function ContactForm() {
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
-
     console.log(name + " - " + year + make + model + "\n" + phone + "\n" + descripion + "\n");
 
     sendEmail(email, name, (name + "\n" + phone + "\n" + year + ' ' + make + ' ' + model + "\n" + "\n" + descripion));
+
+    setName("")
+    setYear("")
+    setMake("")
+    setModel("")
+    setEmail("")
+    setPhone("")
+    setDescription("")
   };
 
   return (
@@ -33,6 +40,7 @@ export default function ContactForm() {
                 className="border-neutral-300 w-full h-10 rounded-l border-l-2 border-t-2 border-b-2 border-r p-2"
                 placeholder="Name"
                 onChange={(e) => setName(e.target.value)}
+                value={name}
               />
             </div>
           </div>
@@ -45,6 +53,7 @@ export default function ContactForm() {
                 className="border-neutral-300 w-full h-10 rounded-l border-l-2 border-t-2 border-b-2 border-r p-2"
                 placeholder="Year"
                 onChange={(e) => setYear(e.target.value)}
+                value={year}
               />
               <input
                 type="text"
@@ -52,6 +61,7 @@ export default function ContactForm() {
                 className="border-neutral-300 w-full h-10 rounded-r border-r-2 border-t-2 border-b-2 border-l p-2"
                 placeholder="Make"
                 onChange={(e) => setMake(e.target.value)}
+                value={make}
               />
             </div>
             <div className="flex">
@@ -61,6 +71,7 @@ export default function ContactForm() {
                 className="border-neutral-300 w-full h-10 rounded border-l-2 border-t-2 border-b-2 border-r-2 p-2"
                 placeholder="Model"
                 onChange={(e) => setModel(e.target.value)}
+                value={model}
               />
             </div>
           </div>
@@ -73,6 +84,7 @@ export default function ContactForm() {
                 className="border-neutral-300 w-full h-10 rounded-l border-l-2 border-t-2 border-b-2 border-r p-2"
                 placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
+                value={email}
               />
               <input
                 type="text"
@@ -80,6 +92,7 @@ export default function ContactForm() {
                 className="border-neutral-300 w-full h-10 rounded-r border-r-2 border-t-2 border-b-2 border-l p-2"
                 placeholder="Phone Number"
                 onChange={(e) => setPhone(e.target.value)}
+                value={phone}
               />
             </div>
           </div>
@@ -90,6 +103,7 @@ export default function ContactForm() {
                 className="border-neutral-300 w-full h-48 text-wrap rounded-l border-l-2 border-t-2 border-b-2 border-r p-2"
                 placeholder="Description"
                 onChange={(e) => setDescription(e.target.value)}
+                value={descripion}
               />
             </div>
           </div>
