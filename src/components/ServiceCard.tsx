@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 type ServiceCardParams = {
   title: string;
@@ -13,15 +14,20 @@ export default function ServiceCard({
 }: ServiceCardParams) {
   return (
     <>
-      <div className="bg-neutral-300 p-6 md:p-4 lg:p-6 md:w-[25vw] m-auto shadow-lg hover:scale-[1.01] transition-transform">
-        <div className="container w-full overflow-hidden content-center m-auto">
-          <img src={img} className="m-auto rounded-md"/>
+      <Link
+        href={`services#${title}`}
+        className="bg-cover brightness-100 flex-col text-center justify-center h-[30vw] w-screen md:w-[25vw] m-auto shadow-neutral-400 shadow-md hover:scale-[1.01] transition-transform"
+        style={{ backgroundImage: `url(${img})` }}
+      >
+        <div className="bg-white/20 hover:bg-white/60 w-full h-full flex">
+          <h1 className="text-2xl lg:text-4xl text-black uppercase font-semibold m-auto text-center font-poppins ">
+            {title}
+          </h1>
+          
         </div>
 
-        <h1 className="text-2xl py-6 font-semibold">{title}</h1>
-
-        <p className="text-lg font-semibold">{description}</p>
-      </div>
+        
+      </Link>
     </>
   );
 }
