@@ -29,7 +29,7 @@ export default function ServicePageTileNew({
 
   return (
     <>
-      <div id={title} className="flex flex-col space-y-7 md:flex-row w-full md:h-[50vh] space-x-8 px-12 py-6">
+      <div id={title} className="flex flex-col space-y-7 md:flex-row w-full h-[40rem] space-x-8 px-12 py-6">
         <div className="h-full md:w-1/2 overflow-hidden relative">
           <div className="embla w-full h-full">
             <div className="absolute z-20 w-full h-full">
@@ -62,12 +62,12 @@ export default function ServicePageTileNew({
           </div>
         </div>
 
-        <div className="h-full md:w-1/2 space-y-4 flex-col flex justify-center">
-          <h1 className="font-poppins text-3xl capitalize font-bold">
+        <div className="h-fit md:w-1/2 space-y-4 flex-col flex justify-center">
+          <h1 className="font-poppins text-nowrap text-3xl capitalize font-bold">
             {title}
           </h1>
 
-          <p className="font-jost text-xl md:text-2xl lg:text-3xl text-pretty">
+          <p className="font-jost text-xl lg:text-3xl xl:text-3xl text-pretty">
             {description}
           </p>
         </div>
