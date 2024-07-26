@@ -1,6 +1,7 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { sendEmail } from "@/utils/send-email";
+import { FormEvent, useEffect, useState } from "react";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
@@ -13,7 +14,10 @@ export default function ContactForm() {
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
-    
+
+    console.log(name + " - " + year + make + model + "\n" + phone + "\n" + descripion + "\n");
+
+    sendEmail(email, name, (name + "\n" + phone + "\n" + year + ' ' + make + ' ' + model + "\n" + "\n" + descripion));
   };
 
   return (
@@ -93,7 +97,7 @@ export default function ContactForm() {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="bg-genesis-orange text-lg h-16 rounded-3xl  w-56"
+            className="bg-genesis-orange text-white text-lg h-16 rounded-3xl  w-56"
             onSubmit={(e) => {
               e.preventDefault;
             }}

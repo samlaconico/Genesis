@@ -31,7 +31,7 @@ export const ServiceData = [
       "Fuel",
     ],
     description:
-      "With access to premier performance brands, we provide comprehensive upgrades for your vehicle. Our expertise lies in sourcing and installing high-quality, industry-trusted name brand parts. Whether you require an intake, exhaust, or tune, we are dedicated to helping you achieve your car's performance goals.",
+      "With access to premier performance brands, we provide comprehensive upgrades for your vehicle. Our expertise lies in sourcing and installing high-quality, industry-trusted name brand parts. Whether you're installing an intake, exhaust, tune, or other performance mods, we are dedicated to helping you achieve your car's power goals. Our skilled team ensures every mod meets the highest standards for quality and reliability, delivering the best results for your car.",
     headerimg: "/images/footer.png",
     bodyimg: "/images/footer.png",
   },
@@ -48,7 +48,7 @@ export const ServiceData = [
       "Accesories",
     ],
     description:
-      "We offer a wide range of suspension solutions to meet your desired stance or look. Whether you're looking to enhance your vehicle's handling with lowering springs, achieve adjustable height and improved performance with coil-overs, enjoy the versatility and smooth ride of air suspension, or elevate your vehicle's stance with lift kits, we have the expertise and quality parts to get the job done. Our skilled team is dedicated to providing top-notch service and ensuring your suspension not only meets but exceeds your expectations, delivering the performance and comfort you desire.",
+      "We offer a variety of suspension solutions to meet your desired stance or look. Whether you want to enhance handling with lowering springs, achieve adjustable height and performance with coil-overs, enjoy the versatility of air suspension, or elevate your vehicle with lift kits, we have the expertise and quality parts. Our skilled team is dedicated to providing top-notch service, ensuring your suspension exceeds your expectations in performance and comfort.",
     headerimg: "/images/service2.png",
     bodyimg: "/images/footer.png",
   },

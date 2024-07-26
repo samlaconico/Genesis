@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <div>
       <h1 className="bg-genesis-orange fixed md:static w-full text-white text-center z-30 p-1 font-jost">
-        WE ARE NOW LOCATED AT 24922 Anza Dr Valencia, CA 91355 {pathname}
+        WE ARE NOW LOCATED AT 24922 Anza Dr Valencia, CA 91355
       </h1>
 
       <div className="py-3 fixed bg-white md:static top-8 flex-row flex w-full justify-between pr-8 lg:px-4 z-50 border-b-2 md:border-b-0">
