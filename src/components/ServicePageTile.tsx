@@ -1,3 +1,5 @@
+'depricated'
+
 type ServicePageTileParams = {
   title: string;
   descripion: string;

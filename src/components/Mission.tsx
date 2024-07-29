@@ -1,4 +1,6 @@
+'use client'
 import Image from "next/image";
+import { motion } from "framer-motion"
 
 export default function Mission() {
   return (
@@ -14,11 +16,11 @@ export default function Mission() {
           technology with timeless design.
         </p>
 
-        <div className="md:flex md:flex-row h-3/4 justify-center overflow-hidden ">
-          <img src="/images/car1.png" className="opacity-100 transition-opacity hover:opacity-75 object-cover min-w-[33vw]"></img>
-          <img src="/images/car2.png" className="opacity-100 transition-opacity hover:opacity-75 object-cover min-w-[33vw]"></img>
-          <img src="/images/car3.png" className="opacity-100 transition-opacity hover:opacity-75 object-cover min-w-[33vw]"></img>
-        </div>
+        <motion.div initial={{rotate:0}} whileHover={{rotate:360}} transition={{duration:1, ease:"easeInOut"}} className="md:flex md:flex-row h-3/4 justify-center overflow-hidden ">
+          <img src="/images/car1.png" className="opacity-100 transition-opacity object-cover min-w-[33vw]"></img>
+          <img src="/images/car2.png" className="opacity-100 transition-opacity object-cover min-w-[33vw]"></img>
+          <img src="/images/car3.png" className="opacity-100 transition-opacity object-cover min-w-[33vw]"></img>
+        </motion.div>
       </div>
     </>
   )
