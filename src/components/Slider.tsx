@@ -18,19 +18,13 @@ export default function Slider() {
         <div className="embla__container">
           <div className="embla__slide">
             <img
-              src="/images/homebg.png"
+              src="/images/homepage/DSC01925.JPG"
               className="object-cover w-full h-screen object-bottom"
             ></img>
           </div>
           <div className="embla__slide">
             <img
-              src="/images/service1.png"
-              className="object-cover w-full h-screen object-bottom"
-            ></img>
-          </div>
-          <div className="embla__slide">
-            <img
-              src="/images/homebg.png"
+              src="/images/homepage/DSC02110.JPG"
               className="object-cover w-full h-screen object-bottom"
             ></img>
           </div>
