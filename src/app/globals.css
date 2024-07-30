@@ -27,7 +27,7 @@
 }
 
 .article {
-  @apply flex flex-col gap-4 font-poppins text-lg px-4;
+  @apply flex flex-col gap-12 font-poppins text-xl px-4;
 }
 
 .article > h1 {
@@ -36,4 +36,8 @@
 
 .article > h2 {
   @apply font-poppinsBold text-3xl
+}
+
+.article > img {
+  
 }
