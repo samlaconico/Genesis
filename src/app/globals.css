@@ -25,3 +25,15 @@
   flex: 0 0 100%;
   min-width: 0;
 }
+
+.article {
+  @apply flex flex-col gap-4 font-poppins text-lg px-4;
+}
+
+.article > h1 {
+  @apply font-poppinsBold text-4xl text-center
+}
+
+.article > h2 {
+  @apply font-poppinsBold text-3xl
+}

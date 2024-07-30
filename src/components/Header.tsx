@@ -22,19 +22,19 @@ export default function Header() {
 
   return (
     <div>
-      <h1 className="bg-genesis-orange fixed md:static w-full text-white text-center z-30 p-1 font-jost">
+      <h1 className="bg-genesis-orange fixed lg:static w-full text-white text-center z-30 p-1 font-jost">
         WE ARE NOW LOCATED AT 24922 Anza Dr Valencia, CA 91355
       </h1>
 
-      <div className="py-3 fixed bg-white md:static top-8 flex-row flex w-full justify-between pr-8 lg:px-4 z-50 border-b-2 md:border-b-0">
+      <div className="py-3 fixed bg-white lg:static top-8 flex-row flex w-full justify-between pr-8 lg:px-4 z-50 border-b-2 md:border-b-0">
         <Link href="/">
           <img
-            src="images/G1_Text.png"
+            src="/images/G1_Text.png"
             className="h-24 w-full scale-75 lg:hidden block"
           />
-          <img src="images/logo_text.png" className="h-24 hidden lg:block" />
+          <img src="/images/logo_text.png" className="h-24 hidden lg:block" />
         </Link>
-        <div className="hidden md:flex flex-row space-x-12 self-center font-normal font-poppins text-2xl pr-4 text-nowrap">
+        <div className="hidden lg:flex flex-row space-x-12 self-center font-normal font-poppins text-2xl pr-4 text-nowrap">
           <Link
             href="/"
             className={
@@ -55,6 +55,17 @@ export default function Header() {
           >
             SERVICES
           </Link>
+          <Link
+            href="/blog"
+            className={
+              pathname == "/blog"
+                ? "underline underline-offset-4 decoration-genesis-orange"
+                : "hover:underline underline-offset-4 decoration-genesis-orange"
+            }
+          >
+            BLOG
+          </Link>
+
           <Link
             href="/contact"
             className={
@@ -79,7 +90,7 @@ export default function Header() {
 
         <div
           onClick={() => setNav(!nav)}
-          className="self-center hover:cursor-pointer  md:hidden"
+          className="self-center hover:cursor-pointer lg:hidden"
         >
           <HiMiniBars4 className="size-10" />
         </div>
@@ -87,8 +98,8 @@ export default function Header() {
         <div
           className={
             nav
-              ? "fixed md:hidden top-0 right-0 w-[300px] h-screen bg-white z-50 duration-300 font-poppins"
-              : "fixed md:hidden top-0 right-[-100%] w-[300px] h-screen bg-white z-50 duration-300"
+              ? "fixed lg:hidden top-0 right-0 w-[300px] h-screen bg-white z-50 duration-300 font-poppins"
+              : "fixed lg:hidden top-0 right-[-100%] w-[300px] h-screen bg-white z-50 duration-300"
           }
         >
           <HiMiniChevronDoubleRight
@@ -126,7 +137,7 @@ export default function Header() {
                 {ServiceData.map((item, key) => (
                   <Link
                     key={key}
-                    href={`services#${item.title}`}
+                    href={`/services#${item.title}`}
                     onClick={() => {
                       setNav(!nav);
                       setServices(!services);
@@ -138,7 +149,7 @@ export default function Header() {
                   </Link>
                 ))}
                 <Link
-                  href="services"
+                  href="/services"
                   onClick={() => {
                     setNav(!nav);
                     setServices(!services);
@@ -150,6 +161,15 @@ export default function Header() {
                 </Link>
               </div>
             </div>
+            <Link
+              onClick={() => {
+                setNav(!nav);
+                setServices(false);
+              }}
+              href="/blog"
+            >
+              <li className={ListItemStyle}>BLOG</li>
+            </Link>
 
             <Link
               onClick={() => {

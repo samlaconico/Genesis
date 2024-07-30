@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="h-[30vh] w-full flex flex-col md:flex-row justify-evenly font-bold flex-grow p-2 md:p-8 bg-neutral-200 border-t-neutral-400">
         <div className="flex-col md:space-y-3 flex justify-center">
           <img
-            src="images/logo.png"
+            src="/images/logo.png"
             alt="genesis1 logo"
             className="size-32 md:size-[10vw] self-center"
           />
