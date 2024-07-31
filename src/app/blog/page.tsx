@@ -1,4 +1,3 @@
-import BlogCard from "@/components/BlogCard";
 import { BlogData } from "../../../data";
 import Link from "next/link";
 import { title } from "process";
@@ -11,7 +10,7 @@ export default function Blog() {
   return (
     <>
       <div className="px-4 container m-auto pb-10">
-        <h1 className="pt-48 md:pt-0 text-5xl text-center font-bold font-poppinsBold py-4">
+        <h1 className="pt-48 lg:pt-0 pb-10 text-5xl text-center font-bold font-poppinsBold py-4">
           BUILDS, BLOGS, AND EVENTS
         </h1>
 
@@ -33,14 +32,19 @@ export default function Blog() {
 
         {articles.map((value) => (
           <>
-            <div className="pb-10">
-              <img src={value.header} className="w-full"></img>
-
-              <h1 className="py-10 text-4xl font-poppinsBold">{value.title}</h1>
+            <div className="pb-10" key={value.title}>
+              <Link href={`/blog/${value.id}`}>
+                <img src={value.header} className="w-full"></img>
+              </Link>
+              <Link href={`/blog/${value.id}`}>
+                <h1 className="py-10 underline hover:decoration-genesis-orange decoration-white transition-all underline-offset-8 text-4xl font-poppinsBold">
+                  {value.title}
+                </h1>
+              </Link>
               <div className="flex flex-row space-x-4">
-              <p className="font-jost text-xl">{value.description}</p>
-                <div className="w-28 bg-genesis-orange text-center m-auto rounded-xl text-2xl text-nowrap p-2">
-                  <Link href={`/blog/${value.id}`}>See More</Link>
+                <p className="font-jost text-xl">{value.description}</p>
+                <div className="w-28 bg-genesis-orange text-center m-auto rounded-xl hover:scale-105 transition-all text-2xl text-nowrap p-2">
+                  <Link href={`/blog/${value.id}`} className="">See More</Link>
                 </div>
               </div>
             </div>

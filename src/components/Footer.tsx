@@ -9,7 +9,7 @@ import { BsInstagram } from "react-icons/bs";
 export default function Footer() {
   return (
     <>
-      <div className="h-[30vh] w-full flex flex-col md:flex-row justify-evenly font-bold flex-grow p-2 md:p-8 bg-neutral-200 border-t-neutral-400">
+      <div className="h-[25vh] w-full flex flex-col md:flex-row justify-evenly font-bold flex-grow p-2 md:p-8 bg-neutral-300 border-t-neutral-400">
         <div className="flex-col md:space-y-3 flex justify-center">
           <img
             src="/images/logo.png"

@@ -26,21 +26,17 @@ export default function Header() {
         WE ARE NOW LOCATED AT 24922 Anza Dr Valencia, CA 91355
       </h1>
 
-      <div className="py-3 fixed bg-white lg:static top-8 flex-row flex w-full justify-between pr-8 lg:px-4 z-50 border-b-2 md:border-b-0">
-        <Link href="/">
-          <img
-            src="/images/G1_Text.png"
-            className="h-24 w-full scale-75 lg:hidden block"
-          />
-          <img src="/images/logo_text.png" className="h-24 hidden lg:block" />
+      <div className="py-3 fixed h-32 bg-white lg:static top-8 flex-row flex w-full space-x-7 px-3 justify-center lg:pr-8 lg:px-4 z-50 md:border-b-0">
+        <Link href="/" className="">
+          <img src="/images/logo_text.png" className="max-h-full lg:block" />
         </Link>
-        <div className="hidden lg:flex flex-row space-x-12 self-center font-normal font-poppins text-2xl pr-4 text-nowrap">
+        <div className="hidden lg:flex flex-row space-x-6 self-center font-normal font-poppins text-2xl pr-4 text-nowrap">
           <Link
             href="/"
             className={
               pathname == "/"
                 ? "underline underline-offset-4 decoration-genesis-orange"
-                : "hover:underline underline-offset-4 decoration-genesis-orange"
+                : "hover:decoration-genesis-orange decoration-white transition-all underline underline-offset-4"
             }
           >
             HOME
@@ -50,7 +46,7 @@ export default function Header() {
             className={
               pathname == "/services"
                 ? "underline underline-offset-4 decoration-genesis-orange"
-                : "hover:underline underline-offset-4 decoration-genesis-orange"
+                : "hover:decoration-genesis-orange decoration-white transition-all underline underline-offset-4"
             }
           >
             SERVICES
@@ -60,7 +56,7 @@ export default function Header() {
             className={
               pathname == "/blog"
                 ? "underline underline-offset-4 decoration-genesis-orange"
-                : "hover:underline underline-offset-4 decoration-genesis-orange"
+                : "hover:decoration-genesis-orange decoration-white transition-all underline underline-offset-4"
             }
           >
             BLOG
@@ -71,7 +67,7 @@ export default function Header() {
             className={
               pathname == "/contact"
                 ? "underline underline-offset-4 decoration-genesis-orange"
-                : "hover:underline underline-offset-4 decoration-genesis-orange"
+                : "hover:decoration-genesis-orange decoration-white transition-all underline underline-offset-4"
             }
           >
             CONTACT
@@ -81,7 +77,7 @@ export default function Header() {
             className={
               pathname == "/about-us"
                 ? "underline underline-offset-4 decoration-genesis-orange"
-                : "hover:underline underline-offset-4 decoration-genesis-orange"
+                : "hover:decoration-genesis-orange decoration-white transition-all underline underline-offset-4"
             }
           >
             ABOUT US
@@ -90,7 +86,7 @@ export default function Header() {
 
         <div
           onClick={() => setNav(!nav)}
-          className="self-center hover:cursor-pointer lg:hidden"
+          className="self-center cursor-pointer lg:hidden"
         >
           <HiMiniBars4 className="size-10" />
         </div>
@@ -106,7 +102,7 @@ export default function Header() {
             onClick={() => {
               setNav(!nav);
             }}
-            className=" size-12"
+            className="cursor-pointer size-12"
           />
 
           <ul>
