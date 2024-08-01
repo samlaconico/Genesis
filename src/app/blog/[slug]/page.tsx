@@ -1,4 +1,3 @@
-import { BlogData } from "../../../../data";
 import { getArticleData } from "@/utils/articles";
 import getSortedArticles from "@/utils/articles";
 import { notFound } from "next/navigation";
