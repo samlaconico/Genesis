@@ -14,7 +14,7 @@ export default function Footer() {
           <img
             src="/images/logo.png"
             alt="genesis1 logo"
-            className="size-32 md:size-[10vw] self-center"
+            className="size-28 md:size-[10vw] self-center"
           />
           <div className="flex flex-row justify-center space-x-4">
             <Link href="https://www.instagram.com/genesis1autoconcepts/">
