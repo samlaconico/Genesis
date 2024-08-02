@@ -16,9 +16,9 @@ export default function Mission() {
         </p>
 
         <div className="md:flex md:flex-row h-3/4 justify-center overflow-hidden ">
-          <img src="/images/car1.png" className="opacity-100 transition-transform hover:scale-110 object-cover min-w-[33vw]"></img>
-          <img src="/images/car2.png" className="opacity-100 transition-transform hover:scale-110 object-cover min-w-[33vw]"></img>
-          <img src="/images/car3.png" className="opacity-100 transition-transform hover:scale-110 object-cover min-w-[33vw]"></img>
+          <img src="/images/car1.png" className="opacity-100 z-10 hover:z-20 transition-transform hover:scale-110 object-cover min-w-[33vw]"></img>
+          <img src="/images/car2.png" className="opacity-100 z-10 hover:z-20 transition-transform hover:scale-110 object-cover min-w-[33vw]"></img>
+          <img src="/images/car3.png" className="opacity-100 z-10 hover:z-20 transition-transform hover:scale-110 object-cover min-w-[33vw]"></img>
         </div>
       </div>
     </>
