@@ -32,19 +32,23 @@ export default function Blog() {
 
         {articles.map((value) => (
           <>
-            <div className="pb-10" key={value.title}>
-              <Link href={`/blog/${value.id}`}>
-                <img src={value.header} className="w-full"></img>
-              </Link>
-              <Link href={`/blog/${value.id}`}>
-                <h1 className="py-10 underline hover:decoration-genesis-orange decoration-white transition-all underline-offset-8 text-4xl font-poppinsBold">
-                  {value.title}
-                </h1>
-              </Link>
-              <div className="flex flex-row space-x-4">
-                <p className="font-jost text-xl">{value.description}</p>
-                <div className="w-28 bg-genesis-orange text-center m-auto rounded-xl hover:scale-105 transition-all text-2xl text-nowrap p-2">
-                  <Link href={`/blog/${value.id}`} className="">See More</Link>
+            <div className="pb-24">
+              <div className="pb-10" key={value.title}>
+                <Link href={`/blog/${value.id}`}>
+                  <img src={value.header} className="w-full"></img>
+                </Link>
+                <Link href={`/blog/${value.id}`}>
+                  <h1 className="py-10 underline hover:decoration-genesis-orange decoration-white transition-all underline-offset-8 text-4xl font-poppinsBold">
+                    {value.title}
+                  </h1>
+                </Link>
+                <div className="flex flex-row space-x-4">
+                  <p className="font-jost text-xl">{value.description}</p>
+                  <Link href={`/blog/${value.id}`} className="text-white">
+                    <div className="w-28 bg-genesis-orange text-center m-auto rounded-xl hover:scale-105 transition-all text-xl text-nowrap p-2">
+                      See More
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>

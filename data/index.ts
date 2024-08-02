@@ -104,42 +104,47 @@ export const ServiceData = [
   },
 ];
 
+export const HeroImages = [
+  "/images/homepage/hero1.JPG",
+  "/images/homepage/hero2.JPG",
+]
+
 export const ServiceDataNew = [
   {
     title: "general maintenance",
     description:
       "When it comes to general maintenance services at Genesis 1 Auto Concepts, you can expect a comprehensive approach to keeping your vehicle in top shape. Our skilled technicians handle routine tasks such as oil changes, tire rotations, brake inspections, fluid checks, and filter replacements. Regular maintenance not only ensures your car’s longevity but also contributes to better fuel efficiency and overall performance",
-    images: ["/images/generalmaintenance/DSC01984.JPG", "/images/generalmaintenance/DSC02024.JPG", "/images/generalmaintenance/DSC02106.JPG", "/images/generalmaintenance/DSC02173.JPG"],
+    images: ["/images/generalmaintenance/maintenance1.JPG", "/images/generalmaintenance/maintenance2.JPG", "/images/generalmaintenance/maintenance3.JPG", "/images/generalmaintenance/maintenance4.JPG"],
   },
   {
     title: "performance",
     description:
       "With access to premier performance brands, we provide comprehensive upgrades for your vehicle. Our expertise lies in sourcing and installing high-quality, industry-trusted name brand parts. Whether you require an intake, exhaust, or tune, we are dedicated to helping you achieve your car's performance goals.",
-    images: ["/images/performance/DSC02154.JPG", "/images/performance/DSC02155.JPG"],
+    images: ["/images/performance/performance1.JPG", "/images/performance/performance2.JPG"],
   },
   {
     title: "suspension",
     description:
       "We offer a wide range of suspension solutions to meet your desired stance or look. Whether you're looking to enhance your vehicle's handling with lowering springs, achieve adjustable height and improved performance with coil-overs, enjoy the versatility and smooth ride of air suspension, or elevate your vehicle's stance with lift kits, we have the expertise and quality parts to get the job done. Our skilled team is dedicated to providing top-notch service and ensuring your suspension not only meets but exceeds your expectations, delivering the performance and comfort you desire.",
-    images: ["/images/suspension/DSC02047.JPG", "/images/suspension/DSC02184.JPG"],
+    images: ["/images/suspension/suspension1.JPG", "/images/suspension/suspension2.JPG"],
   },
   {
     title: "vinyl wrap & tint",
     description:
       "If you're looking to change the look of your car, we offer professional vinyl wrap services that can transform your vehicle's appearance and provide a fresh, customized look. Additionally, our expert window tinting services help keep your car cool during the hot summer months, offering both comfort and protection from harmful UV rays. Our team is committed to using high-quality materials and precise techniques to ensure a flawless finish, enhancing the aesthetics and functionality of your vehicle.",
-    images: ["/images/wraptint/DSC01915.JPG", "/images/wraptint/DSC01941.JPG", "/images/wraptint/DSC02057.JPG", "/images/wraptint/DSC02131.JPG"],
+    images: ["/images/wraptint/wrap1.JPG", "/images/wraptint/wrap2.JPG", "/images/wraptint/wrap3.JPG", "/images/wraptint/wrap4.JPG"],
   },
   {
     title: "audio",
     description:
       "We specialize in complete audio system overhauls to elevate your in-car entertainment experience. Our services include the installation of new speakers for crystal-clear sound, subwoofers to deliver deep, rich bass, and amplifiers to power your upgraded audio system. Using top-quality components and expert installation techniques, we ensure that your vehicle's audio performance reaches its full potential, providing an immersive and high-fidelity listening experience.",
-    images: ["/images/audio1.png", "/images/car2.png"],
+    images: ["/images/audio/audio1.png"],
   },
   {
     title: "wheels & tires",
     description:
       "Through our partnerships with top wheel and tire manufacturers, we offer the best-looking wheels and high-performance tires to enhance your vehicle. These collaborations guarantee top-quality products that elevate both the aesthetics and handling of your car. Our commitment to combining style with functionality ensures that your vehicle remains grounded and performs at its peak.",
-    images: ["/images/wheelstires/DSC02084.JPG", "/images/wheelstires/DSC02147.JPG", "/images/wheelstires/DSC02148.JPG", "/images/wheelstires/DSC02182.JPG"],
+    images: ["/images/wheelstires/wheels1.JPG", "/images/wheelstires/wheels2.JPG", "/images/wheelstires/wheels3.JPG", "/images/wheelstires/wheels4.JPG"],
   },
 ];
 

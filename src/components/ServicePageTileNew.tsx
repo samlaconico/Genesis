@@ -34,13 +34,13 @@ export default function ServicePageTileNew({
           <div className="embla w-full h-full">
             <div className="absolute z-20 w-full h-full">
               <div className="flex flex-row h-full justify-between">
-                <div className="flex flex-col h-full hover:bg-white hover:cursor-pointer hover:bg-opacity-25 justify-center" onClick={scrollPrev}>
+                <div className="flex flex-col h-full hover:bg-white hover:cursor-pointer hover:bg-opacity-50 justify-center" onClick={scrollPrev}>
                   <button className="embla__prev">
                     <BsChevronCompactLeft className="scale-[3] mx-6" />
                   </button>{" "}
                 </div>
 
-                <div className="flex flex-col hover:bg-white hover:cursor-pointer hover:bg-opacity-25 justify-center" onClick={scrollNext}>
+                <div className="flex flex-col hover:bg-white hover:cursor-pointer hover:bg-opacity-50 justify-center" onClick={scrollNext}>
                   <button className="embla__next" onClick={scrollNext}>
                     <BsChevronCompactRight className="scale-[3]  mx-6" />
                   </button>{" "}

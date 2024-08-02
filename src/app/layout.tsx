@@ -15,8 +15,11 @@ const jost = Jost({weight: "400", subsets: ["latin"], variable:'--font-jost'})
 
 export const metadata: Metadata = {
   title: "Genesis 1 Auto Concepts",
-  description: "",
+  description: "Your One Stop Shop for EVERYTHING AUTOMOTIVE!",
+  icons: "/favicon.ico"
 };
+
+
 
 export default function RootLayout({
   children,

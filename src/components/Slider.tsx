@@ -2,9 +2,12 @@
 
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import { HeroImages } from "../../data";
 
 export default function Slider() {
-  const [emblaRef] = useEmblaCarousel({ loop: true, }, [Autoplay({stopOnInteraction: false})]);
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ stopOnInteraction: false }),
+  ]);
 
   return (
     <div className="opacity-100 transition-opacity relative h-[75vh] overflow-hidden text-center">
@@ -16,18 +19,16 @@ export default function Slider() {
 
       <div className="embla z-0" ref={emblaRef}>
         <div className="embla__container">
-          <div className="embla__slide">
-            <img
-              src="/images/homepage/DSC01925.JPG"
-              className="object-cover w-full h-screen object-bottom"
-            ></img>
-          </div>
-          <div className="embla__slide">
-            <img
-              src="/images/homepage/DSC02110.JPG"
-              className="object-cover w-full h-screen object-bottom"
-            ></img>
-          </div>
+          {HeroImages.map((value, index) => (
+            <>
+              <div className="embla__slide">
+                <img
+                  src={value}
+                  className="object-cover w-full h-screen object-bottom"
+                ></img>
+              </div>
+            </>
+          ))}
         </div>
       </div>
     </div>

@@ -27,8 +27,8 @@ export default function Header() {
       </h1>
 
       <div className="py-3 fixed h-32 bg-white lg:static top-8 flex-row flex w-full space-x-7 px-3 justify-center lg:pr-8 lg:px-4 z-50 md:border-b-0">
-        <Link href="/" className="">
-          <img src="/images/logo_text.png" className="max-h-full lg:block" />
+        <Link href="/" className="content-center">
+          <img src="/images/logo_text.png" className="max-h-full self-center lg:block" />
         </Link>
         <div className="hidden lg:flex flex-row space-x-6 self-center font-normal font-poppins text-2xl pr-4 text-nowrap">
           <Link
