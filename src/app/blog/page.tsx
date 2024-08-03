@@ -9,8 +9,8 @@ export default function Blog() {
 
   return (
     <>
-      <div className="px-4 container m-auto pb-10">
-        <h1 className="pt-48 lg:pt-0 pb-10 text-5xl text-center font-bold font-poppinsBold py-4">
+      <div className="container m-auto px-4 pb-10">
+        <h1 className="py-4 pb-10 pt-48 text-center font-poppinsBold text-5xl font-bold lg:pt-0">
           BUILDS, BLOGS, AND EVENTS
         </h1>
 
@@ -38,14 +38,14 @@ export default function Blog() {
                   <img src={value.header} className="w-full"></img>
                 </Link>
                 <Link href={`/blog/${value.id}`}>
-                  <h1 className="py-10 underline hover:decoration-genesis-orange decoration-white transition-all underline-offset-8 text-4xl font-poppinsBold">
+                  <h1 className="py-10 font-poppinsBold text-4xl underline decoration-white underline-offset-8 transition-all hover:decoration-genesis-orange">
                     {value.title}
                   </h1>
                 </Link>
                 <div className="flex flex-row space-x-4">
                   <p className="font-jost text-xl">{value.description}</p>
                   <Link href={`/blog/${value.id}`} className="text-white">
-                    <div className="w-28 bg-genesis-orange text-center m-auto rounded-xl hover:scale-105 transition-all text-xl text-nowrap p-2">
+                    <div className="m-auto w-28 text-nowrap rounded-xl bg-genesis-orange p-2 text-center text-xl transition-all hover:scale-105">
                       See More
                     </div>
                   </Link>

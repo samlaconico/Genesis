@@ -9,13 +9,13 @@ import { BsInstagram } from "react-icons/bs";
 export default function Footer() {
   return (
     <>
-      <div className="w-full flex flex-col md:flex-row justify-center md:justify-between font-bold flex-grow p-2 md:p-8 bg-neutral-300 border-t-neutral-400">
-        <div className="flex flex-col lg:space-x-3 lg:flex-row space-y-3">
-          <div className="flex-col md:space-y-3 flex justify-center">
+      <div className="flex w-full flex-grow flex-col justify-center border-t-neutral-400 bg-neutral-300 p-2 font-bold md:flex-row md:justify-between md:p-8">
+        <div className="flex flex-col space-y-3 lg:flex-row lg:space-x-3">
+          <div className="flex flex-col justify-center md:space-y-3">
             <img
               src="/images/logo.png"
               alt="genesis1 logo"
-              className="size-28 md:size-[10vw] self-center"
+              className="size-28 self-center md:size-[10vw]"
             />
             <div className="flex flex-row justify-center space-x-4 self-center">
               <Link href="https://www.instagram.com/genesis1autoconcepts/">
@@ -30,14 +30,14 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col text-center lg:text-start text-md lg:text-xl font-jost md:space-y-2 justify-center px-3">
+          <div className="text-md flex flex-col justify-center px-3 text-center font-jost md:space-y-2 lg:text-start lg:text-xl">
             <h1>24922 Anza Dr Santa Clarita, CA 91355</h1>
             <h1>Santa Clarita, CA 91355</h1>
             <h1>(661) 678-0990</h1>
           </div>
         </div>
         <div className="flex flex-row space-x-3">
-          <div className="hidden md:flex flex-col text-2xl font-poppins justify-around text-end px-3">
+          <div className="hidden flex-col justify-around px-3 text-end font-poppins text-2xl md:flex">
             <Link href="/">HOME</Link>
             <Link href="/services">SERVICES</Link>
             <Link href="/contact">CONTACT</Link>
@@ -46,7 +46,7 @@ export default function Footer() {
             </Link>
           </div>
 
-          <div className="hidden md:flex flex-col h-full overflow-hidden w-[50vw] rounded-md">
+          <div className="hidden h-full w-[50vw] flex-col overflow-hidden rounded-md md:flex">
             <GoogleMapsEmbed
               apiKey={process.env.MAP_API || ""}
               height="210%"

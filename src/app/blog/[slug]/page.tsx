@@ -33,9 +33,12 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      <div className="pt-48 lg:pt-5 container mx-auto pb-20">
+      <div className="container mx-auto pb-20 pt-48 lg:pt-5">
         <Link href="/blog">
-          <h1 className="font-poppinsBold px-4 underline decoration-2 hover:decoration-genesis-orange decoration-white underline-offset-4"> &lt; Back to blog posts</h1>
+          <h1 className="px-4 font-poppinsBold underline decoration-white decoration-2 underline-offset-4 hover:decoration-genesis-orange">
+            {" "}
+            &lt; Back to blog posts
+          </h1>
         </Link>
         <article
           className="article"

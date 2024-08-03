@@ -5,8 +5,10 @@ import { ServiceDataNew } from "../../data";
 export default function Services() {
   return (
     <>
-      <h1 className="text-4xl text-center font-poppinsBold">SERVICES OFFERED</h1>
-      <div className="w-full flex flex-wrap flex-row px-8 py-16 md:p-16 m-auto gap-8 ">
+      <h1 className="text-center font-poppinsBold text-4xl">
+        SERVICES OFFERED
+      </h1>
+      <div className="m-auto flex w-full flex-row flex-wrap gap-8 px-8 py-16 md:p-16">
         {ServiceDataNew.map((item, idx) => (
           <ServiceCard
             title={item.title}

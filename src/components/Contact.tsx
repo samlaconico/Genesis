@@ -4,18 +4,18 @@ export default function ContactComponent() {
   return (
     <>
       <div className="">
-        <h1 className="pt-48 md:pt-0 text-5xl text-center font-poppinsBold py-4">
+        <h1 className="py-4 pt-48 text-center font-poppinsBold text-5xl md:pt-0">
           CONTACT
         </h1>
 
-        <div className="w-full h-[50vh] pb-10 object-cover overflow-hidden">
+        <div className="h-[50vh] w-full overflow-hidden object-cover pb-10">
           <img
             src="/images/car2.png"
-            className="m-auto w-full h-full object-cover"
+            className="m-auto h-full w-full object-cover"
           />
         </div>
 
-        <div className="m-auto w-[90vw] lg:w-[55%] pb-10">
+        <div className="m-auto w-[90vw] pb-10 lg:w-[55%]">
           <ContactForm />
         </div>
       </div>

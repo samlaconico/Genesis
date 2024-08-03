@@ -5,10 +5,10 @@ export default function Team() {
   return (
     <>
       <div className="pb-10">
-        <h1 className="py-12 md:pt-0 text-5xl text-center font-poppinsBold">
+        <h1 className="py-12 text-center font-poppinsBold text-5xl md:pt-0">
           MEETING THE TEAM
         </h1>
-        <div className="flex px-3 md:px-0 md:flex-row flex-wrap justify-between text-center ">
+        <div className="flex flex-wrap justify-between px-3 text-center md:flex-row md:px-0">
           {TeamData.map((item, key) => (
             <TeamCard
               key={key}

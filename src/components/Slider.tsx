@@ -10,9 +10,9 @@ export default function Slider() {
   ]);
 
   return (
-    <div className="opacity-100 transition-opacity relative h-[75vh] overflow-hidden text-center">
-      <div className="bg-neutral-50 bg-opacity-70 backdrop-blur-sm absolute left-0 right-0 md:top-[45%] top-[40%] m-auto text-center p-4 content-center overflow-y-scroll no-scrollbar z-20">
-        <h1 className="text-3xl font-semibold font-poppins">
+    <div className="relative h-[75vh] overflow-hidden text-center opacity-100 transition-opacity">
+      <div className="no-scrollbar absolute left-0 right-0 top-[40%] z-20 m-auto content-center overflow-y-scroll bg-neutral-50 bg-opacity-70 p-4 text-center backdrop-blur-sm md:top-[45%]">
+        <h1 className="font-poppins text-3xl font-semibold">
           YOUR ONE STOP SHOP FOR EVERYTHING AUTOMOTIVE
         </h1>
       </div>
@@ -24,7 +24,7 @@ export default function Slider() {
               <div className="embla__slide">
                 <img
                   src={value}
-                  className="object-cover w-full h-screen object-bottom"
+                  className="h-screen w-full object-cover object-bottom"
                 ></img>
               </div>
             </>

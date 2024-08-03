@@ -1,4 +1,4 @@
-'depricated'
+"depricated";
 
 type ServicePageTileParams = {
   title: string;
@@ -21,25 +21,29 @@ export default function ServicePageTile({
         <div className="pb-10">
           <img
             src={headerimg}
-            className="w-screen h-[70vh] md:h-[35vw] object-cover"
+            className="h-[70vh] w-screen object-cover md:h-[35vw]"
           />
         </div>
 
         <div className="m-auto mx-[5vw] space-y-5">
-          <div className="block md:flex-row md:flex md:space-x-24" >
-          <h1 className="text-4xl font-semibold uppercase font-poppins">{title}</h1>
+          <div className="block md:flex md:flex-row md:space-x-24">
+            <h1 className="font-poppins text-4xl font-semibold uppercase">
+              {title}
+            </h1>
 
-          <p className="text-2xl font-medium font-jost">{descripion}</p>
+            <p className="font-jost text-2xl font-medium">{descripion}</p>
           </div>
 
-          <div className="flex flex-col md:flex-row space-y-14 md:space-y-0 md:text-start md:items-start md:space-x-14 py-8 pb-14">
+          <div className="flex flex-col space-y-14 py-8 pb-14 md:flex-row md:items-start md:space-x-14 md:space-y-0 md:text-start">
             <img
-              className="md:w-1/2 rounded-xl shadow-lg shadow-neutral-500"
+              className="rounded-xl shadow-lg shadow-neutral-500 md:w-1/2"
               src={bodyimg}
             />
             <ul className="list-disc px-4">
               {points.map((value, key) => (
-                <li key={key} className="font-medium font-jost text-2xl">{value}</li>
+                <li key={key} className="font-jost text-2xl font-medium">
+                  {value}
+                </li>
               ))}
             </ul>
           </div>

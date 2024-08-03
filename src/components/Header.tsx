@@ -22,21 +22,24 @@ export default function Header() {
 
   return (
     <div>
-      <h1 className="bg-genesis-orange fixed lg:static w-full text-white text-center z-30 p-1 font-jost">
+      <h1 className="fixed z-30 w-full bg-genesis-orange p-1 text-center font-jost text-white lg:static">
         WE ARE NOW LOCATED AT 24922 Anza Dr Valencia, CA 91355
       </h1>
 
-      <div className="py-3 fixed h-32 bg-white lg:static top-8 flex-row flex w-full space-x-7 px-3 justify-center lg:pr-8 lg:px-4 z-50 md:border-b-0">
+      <div className="fixed top-8 z-50 flex h-32 w-full flex-row justify-center space-x-7 bg-white px-3 py-3 md:border-b-0 lg:static lg:px-4 lg:pr-8">
         <Link href="/" className="content-center">
-          <img src="/images/logo_text.png" className="max-h-full self-center lg:block" />
+          <img
+            src="/images/logo_text.png"
+            className="max-h-full self-center lg:block"
+          />
         </Link>
-        <div className="hidden lg:flex flex-row space-x-6 self-center font-normal font-poppins text-2xl pr-4 text-nowrap">
+        <div className="hidden flex-row space-x-6 self-center text-nowrap pr-4 font-poppins text-2xl font-normal lg:flex">
           <Link
             href="/"
             className={
               pathname == "/"
-                ? "underline underline-offset-4 decoration-genesis-orange"
-                : "hover:decoration-genesis-orange decoration-white transition-all underline underline-offset-4"
+                ? "underline decoration-genesis-orange underline-offset-4"
+                : "underline decoration-white underline-offset-4 transition-all hover:decoration-genesis-orange"
             }
           >
             HOME
@@ -45,8 +48,8 @@ export default function Header() {
             href="/services"
             className={
               pathname == "/services"
-                ? "underline underline-offset-4 decoration-genesis-orange"
-                : "hover:decoration-genesis-orange decoration-white transition-all underline underline-offset-4"
+                ? "underline decoration-genesis-orange underline-offset-4"
+                : "underline decoration-white underline-offset-4 transition-all hover:decoration-genesis-orange"
             }
           >
             SERVICES
@@ -55,8 +58,8 @@ export default function Header() {
             href="/blog"
             className={
               pathname == "/blog"
-                ? "underline underline-offset-4 decoration-genesis-orange"
-                : "hover:decoration-genesis-orange decoration-white transition-all underline underline-offset-4"
+                ? "underline decoration-genesis-orange underline-offset-4"
+                : "underline decoration-white underline-offset-4 transition-all hover:decoration-genesis-orange"
             }
           >
             BLOG
@@ -66,8 +69,8 @@ export default function Header() {
             href="/contact"
             className={
               pathname == "/contact"
-                ? "underline underline-offset-4 decoration-genesis-orange"
-                : "hover:decoration-genesis-orange decoration-white transition-all underline underline-offset-4"
+                ? "underline decoration-genesis-orange underline-offset-4"
+                : "underline decoration-white underline-offset-4 transition-all hover:decoration-genesis-orange"
             }
           >
             CONTACT
@@ -76,8 +79,8 @@ export default function Header() {
             href="/about-us"
             className={
               pathname == "/about-us"
-                ? "underline underline-offset-4 decoration-genesis-orange"
-                : "hover:decoration-genesis-orange decoration-white transition-all underline underline-offset-4"
+                ? "underline decoration-genesis-orange underline-offset-4"
+                : "underline decoration-white underline-offset-4 transition-all hover:decoration-genesis-orange"
             }
           >
             ABOUT US
@@ -86,7 +89,7 @@ export default function Header() {
 
         <div
           onClick={() => setNav(!nav)}
-          className="self-center cursor-pointer lg:hidden"
+          className="cursor-pointer self-center lg:hidden"
         >
           <HiMiniBars4 className="size-10" />
         </div>
@@ -94,15 +97,15 @@ export default function Header() {
         <div
           className={
             nav
-              ? "fixed lg:hidden top-0 right-0 w-[300px] h-screen bg-white z-50 duration-300 font-poppins"
-              : "fixed lg:hidden top-0 right-[-100%] w-[300px] h-screen bg-white z-50 duration-300"
+              ? "fixed right-0 top-0 z-50 h-screen w-[300px] bg-white font-poppins duration-300 lg:hidden"
+              : "fixed right-[-100%] top-0 z-50 h-screen w-[300px] bg-white duration-300 lg:hidden"
           }
         >
           <HiMiniChevronDoubleRight
             onClick={() => {
               setNav(!nav);
             }}
-            className="cursor-pointer size-12"
+            className="size-12 cursor-pointer"
           />
 
           <ul>
@@ -126,9 +129,7 @@ export default function Header() {
                 SERVICES
               </li>
               <div
-                className={
-                  services ? "transition-all duration-300 " : "hidden "
-                }
+                className={services ? "transition-all duration-300" : "hidden"}
               >
                 {ServiceData.map((item, key) => (
                   <Link
@@ -139,7 +140,7 @@ export default function Header() {
                       setServices(!services);
                     }}
                   >
-                    <li className="p-3 px-12 border-t-2 hover:bg-neutral-300 capitalize">
+                    <li className="border-t-2 p-3 px-12 capitalize hover:bg-neutral-300">
                       {item.title}
                     </li>
                   </Link>
@@ -151,7 +152,7 @@ export default function Header() {
                     setServices(!services);
                   }}
                 >
-                  <li className="p-3 px-12 border-t-2 hover:bg-neutral-300 capitalize">
+                  <li className="border-t-2 p-3 px-12 capitalize hover:bg-neutral-300">
                     View All
                   </li>
                 </Link>

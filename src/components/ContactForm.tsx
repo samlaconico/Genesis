@@ -14,30 +14,56 @@ export default function ContactForm() {
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
-    console.log(name + " - " + year + make + model + "\n" + phone + "\n" + descripion + "\n");
+    console.log(
+      name +
+        " - " +
+        year +
+        make +
+        model +
+        "\n" +
+        phone +
+        "\n" +
+        descripion +
+        "\n",
+    );
 
-    sendEmail(email, name, (name + "\n" + phone + "\n" + year + ' ' + make + ' ' + model + "\n" + "\n" + descripion));
+    sendEmail(
+      email,
+      name,
+      name +
+        "\n" +
+        phone +
+        "\n" +
+        year +
+        " " +
+        make +
+        " " +
+        model +
+        "\n" +
+        "\n" +
+        descripion,
+    );
 
-    setName("")
-    setYear("")
-    setMake("")
-    setModel("")
-    setEmail("")
-    setPhone("")
-    setDescription("")
+    setName("");
+    setYear("");
+    setMake("");
+    setModel("");
+    setEmail("");
+    setPhone("");
+    setDescription("");
   };
 
   return (
     <>
       <form onSubmit={onSubmit} className="font-poppins">
-        <div className="flex-col flex px-10">
+        <div className="flex flex-col px-10">
           <div className="pb-4">
             <h1>Contact Info</h1>
             <div className="flex">
               <input
                 type="text"
                 name="name"
-                className="border-neutral-300 w-full h-10 rounded-l border-l-2 border-t-2 border-b-2 border-r p-2"
+                className="h-10 w-full rounded-l border-b-2 border-l-2 border-r border-t-2 border-neutral-300 p-2"
                 placeholder="Name"
                 onChange={(e) => setName(e.target.value)}
                 value={name}
@@ -50,7 +76,7 @@ export default function ContactForm() {
               <input
                 type="text"
                 name="year"
-                className="border-neutral-300 w-full h-10 rounded-l border-l-2 border-t-2 border-b-2 border-r p-2"
+                className="h-10 w-full rounded-l border-b-2 border-l-2 border-r border-t-2 border-neutral-300 p-2"
                 placeholder="Year"
                 onChange={(e) => setYear(e.target.value)}
                 value={year}
@@ -58,7 +84,7 @@ export default function ContactForm() {
               <input
                 type="text"
                 name="make"
-                className="border-neutral-300 w-full h-10 rounded-r border-r-2 border-t-2 border-b-2 border-l p-2"
+                className="h-10 w-full rounded-r border-b-2 border-l border-r-2 border-t-2 border-neutral-300 p-2"
                 placeholder="Make"
                 onChange={(e) => setMake(e.target.value)}
                 value={make}
@@ -68,7 +94,7 @@ export default function ContactForm() {
               <input
                 type="text"
                 name="model"
-                className="border-neutral-300 w-full h-10 rounded border-l-2 border-t-2 border-b-2 border-r-2 p-2"
+                className="h-10 w-full rounded border-b-2 border-l-2 border-r-2 border-t-2 border-neutral-300 p-2"
                 placeholder="Model"
                 onChange={(e) => setModel(e.target.value)}
                 value={model}
@@ -81,7 +107,7 @@ export default function ContactForm() {
               <input
                 type="email"
                 name="email"
-                className="border-neutral-300 w-full h-10 rounded-l border-l-2 border-t-2 border-b-2 border-r p-2"
+                className="h-10 w-full rounded-l border-b-2 border-l-2 border-r border-t-2 border-neutral-300 p-2"
                 placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
@@ -89,7 +115,7 @@ export default function ContactForm() {
               <input
                 type="text"
                 name="phone"
-                className="border-neutral-300 w-full h-10 rounded-r border-r-2 border-t-2 border-b-2 border-l p-2"
+                className="h-10 w-full rounded-r border-b-2 border-l border-r-2 border-t-2 border-neutral-300 p-2"
                 placeholder="Phone Number"
                 onChange={(e) => setPhone(e.target.value)}
                 value={phone}
@@ -100,7 +126,7 @@ export default function ContactForm() {
             <div className="flex pb-2">
               <textarea
                 name="description"
-                className="border-neutral-300 w-full h-48 text-wrap rounded-l border-l-2 border-t-2 border-b-2 border-r p-2"
+                className="h-48 w-full text-wrap rounded-l border-b-2 border-l-2 border-r border-t-2 border-neutral-300 p-2"
                 placeholder="Description"
                 onChange={(e) => setDescription(e.target.value)}
                 value={descripion}
@@ -111,7 +137,7 @@ export default function ContactForm() {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="bg-genesis-orange text-white text-lg h-16 rounded-3xl  w-56"
+            className="h-16 w-56 rounded-3xl bg-genesis-orange text-lg text-white"
             onSubmit={(e) => {
               e.preventDefault;
             }}
