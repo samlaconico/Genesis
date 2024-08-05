@@ -16,17 +16,14 @@ export default function ServiceCard({
     <>
       <Link
         href={`services#${title}`}
-        className="bg-cover brightness-100 flex-col text-center justify-center h-[30vw] w-screen md:w-[25vw] m-auto shadow-neutral-400 shadow-md hover:scale-[1.01] transition-transform"
+        className="m-auto h-[30vw] w-screen flex-col justify-center bg-cover text-center shadow-md shadow-neutral-400 brightness-100 transition-transform hover:scale-[1.01] md:w-[25vw]"
         style={{ backgroundImage: `url(${img})` }}
       >
-        <div className="bg-white/20 hover:bg-white/60 w-full h-full flex">
-          <h1 className="text-2xl lg:text-4xl text-black uppercase font-semibold m-auto text-center font-poppins ">
+        <div className="flex h-full w-full bg-white/20 hover:bg-white/60">
+          <h1 className="m-auto text-center font-poppins text-2xl font-semibold uppercase text-black lg:text-4xl">
             {title}
           </h1>
-          
         </div>
-
-        
       </Link>
     </>
   );

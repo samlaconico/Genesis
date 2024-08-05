@@ -4,17 +4,17 @@ export default function AboutUsComponent() {
   return (
     <>
       <div className="md:pb-20">
-        <h1 className="pt-48 md:pt-0 text-5xl text-center font-poppinsBold py-4">
+        <h1 className="py-4 pt-48 text-center font-poppinsBold text-5xl md:pt-0">
           ABOUT US
         </h1>
 
-        <div className="w-full h-[50vh] pb-10 object-cover overflow-hidden">
+        <div className="h-[50vh] w-full overflow-hidden object-cover pb-10">
           <img
             src={AboutUsData.img}
-            className="m-auto w-full h-full object-cover"
+            className="m-auto h-full w-full object-cover"
           />
         </div>
-        <div className="py-10 md:py-0 md:pt-8 container text-center pr-10 text-2xl font-jost m-auto">
+        <div className="container m-auto px-6 py-10 text-center font-jost text-2xl md:py-0 md:pt-8">
           <p>{AboutUsData.description}</p>
         </div>
       </div>

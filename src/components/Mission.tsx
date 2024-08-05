@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function Mission() {
   return (
     <>
-      <div className="text-center flex flex-col m-auto py-6 md:pt-32 pb-16 font-sans justify-between">
-        <h1 className="text-5xl md:text-5xl font-poppinsBold ">OUR MISSION</h1>
+      <div className="m-auto flex flex-col justify-between py-6 pb-16 text-center font-sans md:pt-32">
+        <h1 className="font-poppinsBold text-5xl md:text-5xl">OUR MISSION</h1>
 
-        <p className="m-auto text-xl md:text-3xl xl:w-2/3 w-full py-12 pb-8 md:pb-32 px-8 font-jost">
+        <p className="m-auto w-full px-8 py-12 pb-8 font-jost text-xl md:pb-32 md:text-3xl xl:w-2/3">
           Genesis 1 Auto Concepts is committed to excellence in automotive
           craftsmanship. Our mission is to provide innovative solutions,
           personalized service, and unmatched quality to our valued customers.
@@ -14,12 +14,21 @@ export default function Mission() {
           technology with timeless design.
         </p>
 
-        <div className="md:flex md:flex-row h-3/4 justify-center overflow-hidden ">
-          <img src="/images/car1.png" className="opacity-100 transition-opacity hover:opacity-75 object-cover min-w-[33vw]"></img>
-          <img src="/images/car2.png" className="opacity-100 transition-opacity hover:opacity-75 object-cover min-w-[33vw]"></img>
-          <img src="/images/car3.png" className="opacity-100 transition-opacity hover:opacity-75 object-cover min-w-[33vw]"></img>
+        <div className="h-3/4 justify-center overflow-hidden md:flex md:flex-row">
+          <img
+            src="/images/car1.png"
+            className="z-10 min-w-[33vw] object-cover opacity-100 transition-transform hover:z-20 hover:scale-110"
+          ></img>
+          <img
+            src="/images/car2.png"
+            className="z-10 min-w-[33vw] object-cover opacity-100 transition-transform hover:z-20 hover:scale-110"
+          ></img>
+          <img
+            src="/images/car3.png"
+            className="z-10 min-w-[33vw] object-cover opacity-100 transition-transform hover:z-20 hover:scale-110"
+          ></img>
         </div>
       </div>
     </>
-  )
+  );
 }

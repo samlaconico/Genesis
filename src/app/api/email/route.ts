@@ -6,7 +6,7 @@ export async function POST(request: NextRequest) {
   const { email, name, message } = await request.json();
 
   const transport = nodemailer.createTransport({
-    service: 'gmail',
+    service: "gmail",
 
     auth: {
       user: process.env.SMTP_EMAIL,
@@ -32,10 +32,10 @@ export async function POST(request: NextRequest) {
       });
     });
 
-    try {
-        await sendMailPromise()
-        return NextResponse.json({message : 'Email Sent!'})
-    } catch (err) {
-        return NextResponse.json({error: err}, {status: 500})
-    }
+  try {
+    await sendMailPromise();
+    return NextResponse.json({ message: "Email Sent!" });
+  } catch (err) {
+    return NextResponse.json({ error: err }, { status: 500 });
+  }
 }
