@@ -138,7 +138,7 @@ export const ServiceDataNew = [
     title: "audio",
     description:
       "We specialize in complete audio system overhauls to elevate your in-car entertainment experience. Our services include the installation of new speakers for crystal-clear sound, subwoofers to deliver deep, rich bass, and amplifiers to power your upgraded audio system. Using top-quality components and expert installation techniques, we ensure that your vehicle's audio performance reaches its full potential, providing an immersive and high-fidelity listening experience.",
-    images: ["/images/audio/audio1.jpg", "/images/audio/audio2.jpg", "/images/audio/audio3.jpg", "/images/audio/audio4.jpg", "/images/audio/audio5.jpg", "/images/audio/audio6.jpg", "/images/audio/audio7.jpg"],
+    images: ["/images/audio/audio1.JPG", "/images/audio/audio2.JPG", "/images/audio/audio3.JPG", "/images/audio/audio4.JPG", "/images/audio/audio5.JPG", "/images/audio/audio6.JPG", "/images/audio/audio7.JPG"],
   },
   {
     title: "wheels & tires",
