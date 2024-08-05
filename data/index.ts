@@ -114,13 +114,13 @@ export const ServiceDataNew = [
     title: "general maintenance",
     description:
       "When it comes to general maintenance services at Genesis 1 Auto Concepts, you can expect a comprehensive approach to keeping your vehicle in top shape. Our skilled technicians handle routine tasks such as oil changes, tire rotations, brake inspections, fluid checks, and filter replacements. Regular maintenance not only ensures your car’s longevity but also contributes to better fuel efficiency and overall performance",
-    images: ["/images/generalmaintenance/maintenance1.JPG", "/images/generalmaintenance/maintenance2.JPG", "/images/generalmaintenance/maintenance3.JPG", "/images/generalmaintenance/maintenance4.JPG"],
+    images: ["/images/maintenance/maintenance1.JPG", "/images/maintenance/maintenance2.JPG", "/images/maintenance/maintenance3.JPG", "/images/maintenance/maintenance4.JPG", "/images/maintenance/maintenance5.JPG", "/images/maintenance/maintenance6.JPG"],
   },
   {
     title: "performance",
     description:
       "With access to premier performance brands, we provide comprehensive upgrades for your vehicle. Our expertise lies in sourcing and installing high-quality, industry-trusted name brand parts. Whether you require an intake, exhaust, or tune, we are dedicated to helping you achieve your car's performance goals.",
-    images: ["/images/performance/performance1.JPG", "/images/performance/performance2.JPG"],
+    images: ["/images/performance/performance1.JPG", "/images/performance/performance2.JPG", "/images/performance/performance3.JPG", "/images/performance/performance4.JPG", "/images/performance/performance5.JPG"],
   },
   {
     title: "suspension",
@@ -132,19 +132,19 @@ export const ServiceDataNew = [
     title: "vinyl wrap & tint",
     description:
       "If you're looking to change the look of your car, we offer professional vinyl wrap services that can transform your vehicle's appearance and provide a fresh, customized look. Additionally, our expert window tinting services help keep your car cool during the hot summer months, offering both comfort and protection from harmful UV rays. Our team is committed to using high-quality materials and precise techniques to ensure a flawless finish, enhancing the aesthetics and functionality of your vehicle.",
-    images: ["/images/wraptint/wrap1.JPG", "/images/wraptint/wrap2.JPG", "/images/wraptint/wrap3.JPG", "/images/wraptint/wrap4.JPG"],
+    images: ["/images/vinyl/vinyl1.JPG", "/images/vinyl/vinyl2.JPG", "/images/vinyl/vinyl3.JPG", "/images/vinyl/vinyl4.JPG"],
   },
   {
     title: "audio",
     description:
       "We specialize in complete audio system overhauls to elevate your in-car entertainment experience. Our services include the installation of new speakers for crystal-clear sound, subwoofers to deliver deep, rich bass, and amplifiers to power your upgraded audio system. Using top-quality components and expert installation techniques, we ensure that your vehicle's audio performance reaches its full potential, providing an immersive and high-fidelity listening experience.",
-    images: ["/images/audio/audio1.png"],
+    images: ["/images/audio/audio1.JPG", "/images/audio/audio2.JPG", "/images/audio/audio3.JPG", "/images/audio/audio4.JPG", "/images/audio/audio5.JPG", "/images/audio/audio6.JPG", "/images/audio/audio7.JPG"],
   },
   {
     title: "wheels & tires",
     description:
       "Through our partnerships with top wheel and tire manufacturers, we offer the best-looking wheels and high-performance tires to enhance your vehicle. These collaborations guarantee top-quality products that elevate both the aesthetics and handling of your car. Our commitment to combining style with functionality ensures that your vehicle remains grounded and performs at its peak.",
-    images: ["/images/wheelstires/wheels1.JPG", "/images/wheelstires/wheels2.JPG", "/images/wheelstires/wheels3.JPG", "/images/wheelstires/wheels4.JPG"],
+    images: ["/images/wheelstires/wheelstires1.JPG", "/images/wheelstires/wheelstires2.JPG", "/images/wheelstires/wheelstires3.JPG", "/images/wheelstires/wheelstires4.JPG", "/images/wheelstires/wheelstires5.JPG"],
   },
 ];
 

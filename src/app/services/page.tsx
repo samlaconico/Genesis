@@ -7,8 +7,8 @@ import { useState } from "react";
 export default function ServicesPage() {
   return (
     <>
-      <div className="md:pb-20 md:pt-0">
-        <h1 className="py-4 pt-48 text-center font-poppinsBold text-5xl font-bold lg:pt-0">
+      <div className="md:pb-20 lg:pt-5 pt-44">
+        <h1 className="text-center font-poppinsBold text-5xl font-bold pb-5">
           SERVICES
         </h1>
         {ServiceDataNew.map((item, idx) => (

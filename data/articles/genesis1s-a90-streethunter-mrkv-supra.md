@@ -1,17 +1,16 @@
 ---
-title: "Genesis 1's A90 Street Hunter Mk-V Supra"
+title: "Genesis 1's A90 Street Hunter MkV Supra"
 date: "07-30-2024"
 header: "/images/blog/blogsupra/supra1.JPG"
-description: "When it comes to general maintenance services at Genesis 1 Auto Concepts, you can expect a comprehensive approach to keeping your vehicle in top shape. Our skilled technicians handle routine tasks such as oil changes, tire rotations, brake inspections, fluid checks, and filter replacements. Regular maintenance not only ensures your car’s longevity but also contributes to better fuel efficiency and overall performance"
+description: "The shop's A90 Supra is a real neck-breaker. Its Ultraviolet color, borrowed from Porsche to match another G1 build, immediately catches the eye. Decked out with the Streethunter widebody kit and riding on AG SR2 wheels in brushed grigio, it's a stunning sight."
 ---
 
-# Genesis 1's A90 Street Hunter Mk-V Supra
+# Genesis 1's A90 Street Hunter MkV Supra
 
 ![car](/images/blog/blogsupra/supra1.JPG)
 
-When it comes to general maintenance services at Genesis 1 Auto Concepts, you can expect a comprehensive approach to keeping your vehicle in top shape. Our skilled technicians handle routine tasks such as oil changes, tire rotations, brake inspections, fluid checks, and filter replacements. Regular maintenance not only ensures your car’s longevity but also contributes to better fuel efficiency and overall performance
+The shop's A90 Supra is a real neck-breaker. Its Ultraviolet color, borrowed from Porsche to match another G1 build, immediately catches the eye. Decked out with the Streethunter widebody kit and riding on AG SR2 wheels in brushed grigio, it's a stunning sight.
 
-## This is an H2 Header
 
 ![car](/images/blog/blogsupra/supra2.JPG)
 
@@ -19,8 +18,10 @@ When it comes to general maintenance services at Genesis 1 Auto Concepts, you ca
 
 ![car](/images/blog/blogsupra/supra4.JPG)
 
+This Supra is one of our showcase builds, making regular appearances at car shows and meets around the LA area. If you attended last year's LA Auto Show, you probably saw it featured prominently in our booth alongside many other cars from our shop and our friends.
+
 ![car](/images/blog/blogsupra/supra5.JPG)
 
 ![car](/images/blog/blogsupra/supra6.JPG)
 
-When it comes to general maintenance services at Genesis 1 Auto Concepts, you can expect a comprehensive approach to keeping your vehicle in top shape. Our skilled technicians handle routine tasks such as oil changes, tire rotations, brake inspections, fluid checks, and filter replacements. Regular maintenance not only ensures your car’s longevity but also contributes to better fuel efficiency and overall performance
+This Supra boasts a full air suspension from Airlift Suspension and a full audio system from Rockford Fosgate, making it as impressive in audio performance as it is in appearance.

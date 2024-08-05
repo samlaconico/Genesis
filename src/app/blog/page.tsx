@@ -9,8 +9,8 @@ export default function Blog() {
 
   return (
     <>
-      <div className="container m-auto px-4 pb-10">
-        <h1 className="py-4 pb-10 pt-48 text-center font-poppinsBold text-5xl font-bold lg:pt-0">
+      <div className="container m-auto px-4 lg:pt-5 pt-44 pb-10">
+        <h1 className="text-center font-poppinsBold text-5xl font-bold pb-10">
           BUILDS, BLOGS, AND EVENTS
         </h1>
 
