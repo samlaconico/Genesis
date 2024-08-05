@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function ServicesPage() {
   return (
     <>
-      <div className="md:pb-20 lg:pt-5 pt-44">
+      <div className="pb-20 lg:pt-5 pt-44">
         <h1 className="text-center font-poppinsBold text-5xl font-bold pb-5">
           SERVICES
         </h1>

@@ -4,7 +4,7 @@ import Team from "@/components/Team";
 export default function AboutUs() {
   return (
     <>
-      <div className="lg:pt-5 pt-44 pb-10">
+      <div className="pb-20 lg:pt-5 pt-44">
         <AboutUsComponent />
         <Team />
       </div>
