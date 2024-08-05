@@ -4,13 +4,13 @@ export default function ContactComponent() {
   return (
     <>
       <div className="">
-        <h1 className="py-10 pt-48 text-center font-poppinsBold text-5xl md:pt-0">
+        <h1 className="pb-10 lg:pt-0 text-center font-poppinsBold text-5xl">
           CONTACT
         </h1>
 
         <div className="h-[50vh] w-full overflow-hidden object-cover pb-10">
           <img
-            src="/images/car2.png"
+            src="/images/contact.JPG"
             className="m-auto h-full w-full object-cover"
           />
         </div>

@@ -107,6 +107,7 @@ export const ServiceData = [
 export const HeroImages = [
   "/images/homepage/hero1.JPG",
   "/images/homepage/hero2.JPG",
+  "/images/homepage/hero3.JPG",
 ]
 
 export const ServiceDataNew = [
