@@ -20,7 +20,7 @@ export default function ServiceCard({
         style={{ backgroundImage: `url(${img})` }}
       >
         <div className="flex h-full w-full bg-white/20 hover:bg-white/60">
-          <h1 className="m-auto text-center font-poppins text-2xl font-semibold uppercase text-black lg:text-4xl">
+          <h1 className="m-auto text-center font-poppins text-2xl font-semibold uppercase text-black lg:text-4xl bg-white p-3 shadow-md bg-opacity-50">
             {title}
           </h1>
         </div>
