@@ -11,7 +11,7 @@ export default function AboutUsComponent() {
         <div className="h-[50vh] w-full overflow-hidden object-cover pb-10">
           <img
             src={AboutUsData.img}
-            className="m-auto h-full w-full object-cover object-bottom"
+            className="m-auto h-full w-full object-cover object-center-down"
           />
         </div>
         <div className="container m-auto px-6 py-10 text-center font-jost text-2xl md:py-0 md:pt-8">

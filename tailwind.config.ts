@@ -26,6 +26,10 @@ const config: Config = {
       
       fontWeight: {
         "superbold": "font-weight: 2000"
+      }, 
+
+      objectPosition: {
+        "center-down": "25% 70%"
       }
     },
   },
