@@ -29,7 +29,7 @@ const config: Config = {
       }, 
 
       objectPosition: {
-        "center-down": "25% 70%"
+        "center-down": "25% 97%"
       }
     },
   },
