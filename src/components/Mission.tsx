@@ -16,15 +16,15 @@ export default function Mission() {
 
         <div className="h-3/4 justify-center overflow-hidden md:flex md:flex-row">
           <img
-            src="/images/car1.png"
+            src="/images/homepage/mission1.jpg"
             className="z-10 min-w-[33vw] object-cover opacity-100 transition-transform hover:z-20 hover:scale-110"
           ></img>
           <img
-            src="/images/car2.png"
+            src="/images/homepage/mission2.jpg"
             className="z-10 min-w-[33vw] object-cover opacity-100 transition-transform hover:z-20 hover:scale-110"
           ></img>
           <img
-            src="/images/car3.png"
+            src="/images/homepage/mission3.jpg"
             className="z-10 min-w-[33vw] object-cover opacity-100 transition-transform hover:z-20 hover:scale-110"
           ></img>
         </div>
