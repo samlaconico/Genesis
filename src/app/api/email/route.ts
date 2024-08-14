@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
 
   const mailOptions: Mail.Options = {
     from: process.env.SMTP_EMAIL,
-    to: process.env.SMTP_EMAIL,
+    to: process.env.SMTP_DEST,
     subject: `Inquiry from ${name} ${email}`,
     text: message,
   };
