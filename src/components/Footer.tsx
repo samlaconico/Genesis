@@ -31,8 +31,7 @@ export default function Footer() {
           </div>
 
           <div className="text-md flex flex-col justify-center px-3 text-center font-jost md:space-y-2 lg:text-start lg:text-xl">
-            <h1>24922 Anza Dr Santa Clarita, CA 91355</h1>
-            <h1>Santa Clarita, CA 91355</h1>
+            <h1>24922 Anza Dr, Valencia, CA 91355</h1>
             <h1>(661) 678-0990</h1>
           </div>
         </div>
