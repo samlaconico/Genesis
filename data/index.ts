@@ -121,13 +121,13 @@ export const ServiceDataNew = [
     title: "performance",
     description:
       "With access to premier performance brands, we provide comprehensive upgrades for your vehicle. Our expertise lies in sourcing and installing high-quality, industry-trusted name brand parts. Whether you require an intake, exhaust, or tune, we are dedicated to helping you achieve your car's performance goals.",
-    images: ["/images/performance/performance1.JPG", "/images/performance/performance2.JPG", "/images/performance/performance3.JPG", "/images/performance/performance4.JPG", "/images/performance/performance5.JPG"],
+    images: ["/images/performance/performance1.JPG", "/images/performance/performance2.JPG", "/images/performance/performance3.JPG", "/images/performance/performance4.JPG", "/images/performance/performance5.JPG", "/images/performance/performance6.JPG", "/images/performance/performance7.JPG", "/images/performance/performance8.JPG"],
   },
   {
     title: "suspension",
     description:
       "We offer a wide range of suspension solutions to meet your desired stance or look. Whether you're looking to enhance your vehicle's handling with lowering springs, achieve adjustable height and improved performance with coil-overs, enjoy the versatility and smooth ride of air suspension, or elevate your vehicle's stance with lift kits, we have the expertise and quality parts to get the job done. Our skilled team is dedicated to providing top-notch service and ensuring your suspension not only meets but exceeds your expectations, delivering the performance and comfort you desire.",
-    images: ["/images/suspension/suspension1.JPG", "/images/suspension/suspension2.JPG"],
+    images: ["/images/suspension/suspension1.JPG", "/images/suspension/suspension2.JPG", "/images/suspension/suspension3.jpg", "/images/suspension/suspension4.jpg", "/images/suspension/suspension5.jpg"],
   },
   {
     title: "vinyl wrap & tint",
@@ -153,7 +153,7 @@ export const AboutUsData = {
   description:
     "Since opening our doors in Valencia in 2015, we have been immensely grateful to our loyal customers for their continued support. Our owner, Jay, brings over 30 years of industry experience, having worked in and owned various shops before founding Genesis 1 Auto Concepts. We take pride in being the premier one-stop-shop for all automotive needs. We can do everything you see on our demo cars for your own. Whatever you may desire for your car, truck, van, or RV, you can trust that you’re in expert hands.",
 
-  img: "/images/car1.png",
+  img: "/images/about/about.jpg",
 };
 
 export const InstagramData = [

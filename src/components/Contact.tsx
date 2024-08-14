@@ -8,10 +8,10 @@ export default function ContactComponent() {
           CONTACT
         </h1>
 
-        <div className="h-[50vh] w-full overflow-hidden object-cover pb-10">
+        <div className="h-[30vw] min-h-[250px] overflow-hidden object-cover pb-10">
           <img
             src="/images/contact.JPG"
-            className="m-auto h-full w-full object-cover"
+            className="m-auto h-full w-full object-cover object-center"
           />
         </div>
 
