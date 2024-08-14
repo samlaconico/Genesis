@@ -75,6 +75,7 @@ export default function Header() {
           >
             CONTACT
           </Link>
+            {/*
           <Link
             href="/about-us"
             className={
@@ -85,6 +86,7 @@ export default function Header() {
           >
             ABOUT US
           </Link>
+        */}
         </div>
 
         <div
@@ -177,6 +179,9 @@ export default function Header() {
             >
               <li className={ListItemStyle}>CONTACT</li>
             </Link>
+             {/* 
+    
+
             <Link
               onClick={() => {
                 setNav(!nav);
@@ -185,7 +190,9 @@ export default function Header() {
               href="/about-us"
             >
               <li className={`${ListItemStyle} border-b-2`}>ABOUT US</li>
+              
             </Link>
+              */}
           </ul>
         </div>
       </div>
