@@ -1,7 +1,7 @@
 ---
 title: "Toyo Tires Shutter Space Car Meet & Automotive Photo Gallery"
 date: "08-10-2024"
-header: "/images/blog/toyoshutterspace/ToyoShutterSpace-33.jpg"
+header: "/images/blog/toyoshutterspace/ToyoShutterSpace-testsmall.jpg"
 description: "The annual Shutter Space Collaborative Car Meet & Automotive Photo Gallery event was held in Arts District in LA. We brought out some of the shop cars that are sitting on Toyos to display." 
 ---
 
