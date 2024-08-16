@@ -66,6 +66,16 @@ export default function Header() {
           </Link>
 
           <Link
+            href="/links"
+            className={
+              pathname == "/links"
+                ? "underline decoration-genesis-orange underline-offset-4"
+                : "underline decoration-white underline-offset-4 transition-all hover:decoration-genesis-orange"
+            }
+          >
+            LINKS
+          </Link>
+          <Link
             href="/contact"
             className={
               pathname == "/contact"
@@ -75,7 +85,7 @@ export default function Header() {
           >
             CONTACT
           </Link>
-            {/*
+          {/*
           <Link
             href="/about-us"
             className={
@@ -179,7 +189,7 @@ export default function Header() {
             >
               <li className={ListItemStyle}>CONTACT</li>
             </Link>
-             {/* 
+            {/* 
     
 
             <Link
