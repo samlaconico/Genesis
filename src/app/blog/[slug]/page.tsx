@@ -34,12 +34,18 @@ export default async function Page({ params }: { params: { slug: string } }) {
   return (
     <>
       <div className="container mx-auto pb-20 pt-48 lg:pt-5">
-        <Link href="/blog">
+        <div className="flex flex-row justify-between">
+          <Link href="/blog">
+            <h1 className="px-4 font-poppinsBold underline decoration-white decoration-2 underline-offset-4 hover:decoration-genesis-orange">
+              {" "}
+              &lt; Back to blog posts
+            </h1>
+          </Link>
           <h1 className="px-4 font-poppinsBold underline decoration-white decoration-2 underline-offset-4 hover:decoration-genesis-orange">
             {" "}
-            &lt; Back to blog posts
+            {articleData.date}
           </h1>
-        </Link>
+        </div>
         <article
           className="article"
           dangerouslySetInnerHTML={{ __html: articleData.contentHTML }}
