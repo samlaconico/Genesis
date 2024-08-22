@@ -3,11 +3,8 @@
 import { sendEmail } from "@/utils/send-email";
 import { FormEvent, useEffect, useState } from "react";
 
-export default function ContactForm() {
+export default function BrandContactForm() {
   const [name, setName] = useState("");
-  const [year, setYear] = useState("");
-  const [make, setMake] = useState("");
-  const [model, setModel] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [descripion, setDescription] = useState("");
@@ -17,9 +14,6 @@ export default function ContactForm() {
     console.log(
       name +
         " - " +
-        year +
-        make +
-        model +
         "\n" +
         phone +
         "\n" +
@@ -34,20 +28,11 @@ export default function ContactForm() {
         "\n" +
         phone +
         "\n" +
-        year +
-        " " +
-        make +
-        " " +
-        model +
-        "\n" +
         "\n" +
         descripion,
     );
 
     setName("");
-    setYear("");
-    setMake("");
-    setModel("");
     setEmail("");
     setPhone("");
     setDescription("");
@@ -67,37 +52,6 @@ export default function ContactForm() {
                 placeholder="Name"
                 onChange={(e) => setName(e.target.value)}
                 value={name}
-              />
-            </div>
-          </div>
-          <div className="pb-4">
-            <h1>Vehicle Details</h1>
-            <div className="flex pb-2">
-              <input
-                type="text"
-                name="year"
-                className="h-10 w-full rounded-l border-b-2 border-l-2 border-r border-t-2 border-neutral-300 p-2"
-                placeholder="Year"
-                onChange={(e) => setYear(e.target.value)}
-                value={year}
-              />
-              <input
-                type="text"
-                name="make"
-                className="h-10 w-full rounded-r border-b-2 border-l border-r-2 border-t-2 border-neutral-300 p-2"
-                placeholder="Make"
-                onChange={(e) => setMake(e.target.value)}
-                value={make}
-              />
-            </div>
-            <div className="flex">
-              <input
-                type="text"
-                name="model"
-                className="h-10 w-full rounded border-b-2 border-l-2 border-r-2 border-t-2 border-neutral-300 p-2"
-                placeholder="Model"
-                onChange={(e) => setModel(e.target.value)}
-                value={model}
               />
             </div>
           </div>
@@ -127,7 +81,7 @@ export default function ContactForm() {
               <textarea
                 name="description"
                 className="h-48 w-full text-wrap rounded-l border-b-2 border-l-2 border-r border-t-2 border-neutral-300 p-2"
-                placeholder="Let us know what work you're looking to get done!"
+                placeholder="Let us know what brand / part you're looking for!"
                 onChange={(e) => setDescription(e.target.value)}
                 value={descripion}
               />

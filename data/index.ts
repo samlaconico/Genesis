@@ -193,29 +193,54 @@ export const InstagramData = [
 
 export const TeamData = [
   {
-    name: "John Doe",
+    name: "Jay N.",
     title: "title",
-    img: "/images/team/car2.png",
+    img: "/images/about/about-us-JayN.jpg",
   },
   {
-    name: "John Doe",
+    name: "Sal",
     title: "title",
-    img: "/images/team/image1.png",
+    img: "/images/about/about-us-Sal.jpg",
   },
   {
-    name: "John Doe",
+    name: "April",
     title: "title",
-    img: "/images/team/image1.png",
+    img: "/images/about/about-us-April.jpg",
   },
   {
-    name: "John Doe",
+    name: "Rowie",
     title: "title",
-    img: "/images/team/image1.png",
+    img: "/images/about/about-us-Rowie.jpg",
   },
   {
-    name: "John Doe",
+    name: "Abel",
     title: "title",
-    img: "/images/team/image1.png",
+    img: "/images/about/about-us-Abel.jpg",
+  },
+  {
+    name: "Jay W.",
+    title: "title",
+    img: "/images/about/about-us-JayW.jpg",
+  },
+  {
+    name: "Mariano",
+    title: "title",
+    img: "/images/about/about-us-Mariano.jpg",
+  },
+  {
+    name: "Will",
+    title: "title",
+    img: "/images/about/about-us-Will.jpg",
+  },
+  {
+    name: "Chris",
+    title: "title",
+    img: "/images/about/about-us-Chris.jpg",
+  },
+  {
+    name: "Kai",
+    title: "title",
+    img: "/images/about/about-us-Kai.jpg",
   },
 ];
 

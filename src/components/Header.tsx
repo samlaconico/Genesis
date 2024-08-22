@@ -66,6 +66,16 @@ export default function Header() {
           </Link>
 
           <Link
+            href="/line-card"
+            className={
+              pathname == "/line-card"
+                ? "underline decoration-genesis-orange underline-offset-4"
+                : "underline decoration-white underline-offset-4 transition-all hover:decoration-genesis-orange"
+            }
+          >
+            LINE CARD
+          </Link>
+          <Link
             href="/contact"
             className={
               pathname == "/contact"
@@ -75,7 +85,7 @@ export default function Header() {
           >
             CONTACT
           </Link>
-            {/*
+          {/*
           <Link
             href="/about-us"
             className={
@@ -179,7 +189,18 @@ export default function Header() {
             >
               <li className={ListItemStyle}>CONTACT</li>
             </Link>
-             {/* 
+
+
+            <Link
+              onClick={() => {
+                setNav(!nav);
+                setServices(false);
+              }}
+              href="/line-card"
+            >
+              <li className={ListItemStyle}>LINE CARD</li>
+            </Link>
+            {/* 
     
 
             <Link
