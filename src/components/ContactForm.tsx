@@ -127,7 +127,7 @@ export default function ContactForm() {
               <textarea
                 name="description"
                 className="h-48 w-full text-wrap rounded-l border-b-2 border-l-2 border-r border-t-2 border-neutral-300 p-2"
-                placeholder="Description"
+                placeholder="Let us know what work you're looking to get done!"
                 onChange={(e) => setDescription(e.target.value)}
                 value={descripion}
               />

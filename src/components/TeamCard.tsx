@@ -7,7 +7,7 @@ type TeamCardParams = {
 export default function TeamCard({ name, title, img }: TeamCardParams) {
   return (
     <>
-      <div className="w-[45vw] object-cover md:h-[75vw] md:py-10 lg:h-[35vw] lg:w-[22vw]">
+      <div className="w-[45vw] object-cover md:h-[75vw] md:py-10 lg:h-[35vw] lg:w-[17vw]">
         <img
           className="h-[80%] w-full object-cover pb-2 opacity-100 transition-opacity hover:opacity-75 md:h-[90%]"
           src={img}
