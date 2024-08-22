@@ -194,52 +194,47 @@ export const InstagramData = [
 export const TeamData = [
   {
     name: "Jay N.",
-    title: "title",
+    title: "CEO",
     img: "/images/about/about-us-JayN.jpg",
   },
   {
     name: "Sal",
-    title: "title",
+    title: "General Manager",
     img: "/images/about/about-us-Sal.jpg",
   },
   {
-    name: "April",
-    title: "title",
-    img: "/images/about/about-us-April.jpg",
-  },
-  {
     name: "Rowie",
-    title: "title",
+    title: "Sales Manager",
     img: "/images/about/about-us-Rowie.jpg",
   },
   {
     name: "Abel",
-    title: "title",
+    title: "Service Manager",
     img: "/images/about/about-us-Abel.jpg",
   },
   {
     name: "Jay W.",
-    title: "title",
+    title: "Lead Technician",
     img: "/images/about/about-us-JayW.jpg",
   },
   {
     name: "Mariano",
-    title: "title",
+    title: "Audio Installation Manager",
     img: "/images/about/about-us-Mariano.jpg",
   },
   {
     name: "Will",
-    title: "title",
+    title: "Vinyl & Wrap Tech",
     img: "/images/about/about-us-Will.jpg",
   },
   {
     name: "Chris",
-    title: "title",
+    title: "Head Detailer",
     img: "/images/about/about-us-Chris.jpg",
   },
   {
     name: "Kai",
-    title: "title",
+    title: "Technician",
     img: "/images/about/about-us-Kai.jpg",
   },
 ];
