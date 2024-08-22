@@ -64,7 +64,7 @@ export default function Header() {
           >
             BLOG
           </Link>
-
+          {/*  
           <Link
             href="/line-card"
             className={
@@ -75,6 +75,7 @@ export default function Header() {
           >
             LINE CARD
           </Link>
+          */}
           <Link
             href="/contact"
             className={
@@ -190,7 +191,7 @@ export default function Header() {
               <li className={ListItemStyle}>CONTACT</li>
             </Link>
 
-
+            {/*
             <Link
               onClick={() => {
                 setNav(!nav);
@@ -200,6 +201,8 @@ export default function Header() {
             >
               <li className={ListItemStyle}>LINE CARD</li>
             </Link>
+          */}
+
             {/* 
     
 
