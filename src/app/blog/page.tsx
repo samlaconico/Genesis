@@ -39,10 +39,12 @@ export default function Blog() {
                 </Link>
                 <Link href={`/blog/${value.id}`}>
                   <h1 className="py-10 font-poppinsBold text-4xl underline decoration-white underline-offset-8 transition-all hover:decoration-genesis-orange">
-                    {value.title}
+                    {value.title + " "}
+                    |
+                    {" " + value.date}
                   </h1>
                 </Link>
-                <div className="flex flex-row space-x-4">
+                <div className="flex flex-row space-x-4 justify-between">
                   <p className="font-jost text-xl">{value.description}</p>
                   <Link href={`/blog/${value.id}`} className="text-white">
                     <div className="m-auto w-28 text-nowrap rounded-xl bg-genesis-orange p-2 text-center text-xl transition-all hover:scale-105">
