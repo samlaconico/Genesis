@@ -115,6 +115,8 @@ The debut of the IAM America in the US was a success! Some of our display vehicl
 
 ![car](/images/blog/IAM/IAM_Anaheim-21.jpg)
 
+![car](/images/blog/IAM/IAM_Anaheim-14.jpg)
+
 ![car](/images/blog/IAM/IAM_Anaheim-19.jpg)
 
 ![car](/images/blog/IAM/IAM_Anaheim-18.jpg)
@@ -124,8 +126,6 @@ The debut of the IAM America in the US was a success! Some of our display vehicl
 ![car](/images/blog/IAM/IAM_Anaheim-16.jpg)
 
 ![car](/images/blog/IAM/IAM_Anaheim-15.jpg)
-
-![car](/images/blog/IAM/IAM_Anaheim-14.jpg)
 
 ![car](/images/blog/IAM/IAM_Anaheim-13.jpg)
 
