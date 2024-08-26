@@ -7,6 +7,8 @@ description: "The debut of the IAM America in the US was a success! Some of our 
 
 # International Auto Modified US Debut
 
+The debut of the IAM America in the US was a success! Some of our display vehicles took some IAM hardware home in recoginition of their builds. Rowie's Evo 9 Wagon took home 1st place Mitsubishi and Maui's Toyota Sienna took home 3rd place best Toyota. We would like to thank IAM for throwing a great show with lots of variety. Enjoy some of the coverage from the event!
+
 ![car](/images/blog/IAM/IAM_Anaheim-72.jpg)
 
 ![car](/images/blog/IAM/IAM_Anaheim-71.jpg)
