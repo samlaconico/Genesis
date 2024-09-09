@@ -1,7 +1,7 @@
 ---
 title: "Jay's Birthday Meet"
 date: "09-07-2024"
-header: "/images/blog/JBM/JBM-01.png"
+header: "/images/blog/JBM/JBM-12.jpg"
 description: "We threw a small meet for Jay's birthday! Thank you for all that came by (even though it was HOT) to wish Jay a happy birthday and congrats to all the winners! " 
 ---
 
