@@ -54,16 +54,6 @@ export default function Header() {
           >
             SERVICES
           </Link>
-          <Link
-            href="/blog"
-            className={
-              pathname == "/blog"
-                ? "underline decoration-genesis-orange underline-offset-4"
-                : "underline decoration-white underline-offset-4 transition-all hover:decoration-genesis-orange"
-            }
-          >
-            BLOG
-          </Link>
           {/*  
           <Link
             href="/line-card"
@@ -76,6 +66,17 @@ export default function Header() {
             LINE CARD
           </Link>
           */}
+          <Link
+            href="/blog"
+            className={
+              pathname == "/blog"
+                ? "underline decoration-genesis-orange underline-offset-4"
+                : "underline decoration-white underline-offset-4 transition-all hover:decoration-genesis-orange"
+            }
+          >
+            BLOG
+          </Link>
+
           <Link
             href="/contact"
             className={
@@ -170,6 +171,18 @@ export default function Header() {
                 </Link>
               </div>
             </div>
+            {/*
+            <Link
+              onClick={() => {
+                setNav(!nav);
+                setServices(false);
+              }}
+              href="/line-card"
+            >
+              <li className={ListItemStyle}>LINE CARD</li>
+            </Link>
+          */}
+
             <Link
               onClick={() => {
                 setNav(!nav);
@@ -189,18 +202,6 @@ export default function Header() {
             >
               <li className={ListItemStyle}>CONTACT</li>
             </Link>
-
-            {/*
-            <Link
-              onClick={() => {
-                setNav(!nav);
-                setServices(false);
-              }}
-              href="/line-card"
-            >
-              <li className={ListItemStyle}>LINE CARD</li>
-            </Link>
-          */}
 
             <Link
               onClick={() => {
