@@ -1,5 +1,5 @@
 ---
-title: "Genesis 1 @ SEMA 2024 - SEMA Coverage Part 1"
+title: "Genesis 1 @ SEMA 2024 - SEMA Coverage Part"
 date: "11-06-2024"
 header: "/images/blog/SemaCoverage_P1/sonysema-23.jpg"
 description: "We had the chance to build 6 cars for SEMA this year. We want to thank all the sponsors, friends, and family that supported us to get the builds here. Enjoy some coverage of SEMA. We'll most likely add more to this thread or make another one later in the week. Enjoy some limited coverage for now! " 
