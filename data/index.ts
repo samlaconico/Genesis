@@ -223,11 +223,6 @@ export const TeamData = [
     img: "/images/about/about-us-Mariano.jpg",
   },
   {
-    name: "Will",
-    title: "Vinyl & Wrap Tech",
-    img: "/images/about/about-us-Will.jpg",
-  },
-  {
     name: "Chris",
     title: "Head Detailer",
     img: "/images/about/about-us-Chris.jpg",
